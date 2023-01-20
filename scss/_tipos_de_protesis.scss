@@ -1,0 +1,157 @@
+.body_protesis { 
+    width: 100%;
+    .header {
+        width: 100%;
+        background-image: linear-gradient(to bottom, rgb(76, 74, 74), rgb(128, 117, 117), rgb(175, 172, 172));
+
+        .header__superior {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 10px;
+        }
+        .titulos {
+
+            .titulo_principal {
+                h1 {
+                    text-transform: capitalize;
+                    color: map-get($paletaColores,"blanco");
+                }
+            }
+
+            .subtitulo {
+                h2 {
+                    text-transform: capitalize;
+                    color: map-get($paletaColores,"blanco");
+                }
+            }
+        }
+
+        .header_inferior {
+            background-color: map-get($paletaColores,"esmeralda");
+            width: 100%;
+            margin: 0;
+            .menu {
+                padding:0px 20px;
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    height: 100%;
+                    display: flex;
+
+                    li {
+                        padding-left: 5px;
+                        height: 100%;
+                        list-style: none;
+
+                        a {
+                            width: 100%;
+                            height: 100%;
+                            background-color: map-get($paletaColores,"esmeralda");
+                            font-size: large;
+                            font-weight: 900;
+                            text-decoration: none;
+                            color: $color-header;
+                            text-transform: uppercase;
+                            transition: all 300ms ease;
+                            &:hover {
+                                transform: scale(1.1);
+                                color: $transform;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main_tp {
+        section {
+            #cromo{
+                @include titulo-sombreado;
+                 }
+            #flexible {
+                @include titulo-sombreado;
+            }
+            #acrilico {
+                @include titulo-sombreado;
+            }
+            #fija {
+                @include titulo-sombreado;
+            }
+            .imagenProtesis {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                img {
+                    width: 40%;
+                    height: 600px;
+                }
+            }
+        }
+        .tablas {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            .titulos_protesis {
+                text-align: center;
+                text-transform: uppercase;
+                padding: 5px 0 10px 0;
+                font-size:2rem;
+                color: rgba(0, 0, 0, 0.9);
+                letter-spacing: .05em;
+                text-shadow: 
+                4px 4px 0px rgb(255,255,255), 
+                7px 7px 0px rgba(0, 0, 0, 0.2);;
+            }
+            .tablas_tabla { 
+                table {
+                    background-color: rgb(65, 64, 64);
+                    width: 50%;
+                    position: static;
+                    text-align: center;
+                    margin: 20px 400px;
+                    th {
+                        background-color: map-get($paletaColores,"esmeralda");
+                        color: rgb(255,255,255); 
+                    }
+                    tr {
+                        
+                        td {
+                            background-color: map-get($paletaColores,"esmeralda");
+                            color: rgb(255,255,255);
+                        }
+                    }
+                }
+            }    
+        }
+    }
+}
+
+@media (max-width: 1500px) { 
+
+}
+
+@media (max-width: 1200px)  { 
+
+ }
+@media (max-width: 1024px) {
+
+} 
+
+@media (max-width: 768px) {
+
+ }
+
+@media (max-width: 600px) {
+
+ }
+@media (max-width: 480px) {
+
+ }
+@media (max-width: 320px) {
+
+ }
+ 

@@ -1,0 +1,149 @@
+.cv {
+    background-color: rgb(177, 236, 247);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    .contenedor {
+        width: 100%;
+        max-width: 1000px;
+        min-height: 1000px;
+        margin: 50px;
+        background: map-get($paletaColores,"blanco");
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+        .izquierda {
+            background: rgb(39, 84, 92);
+            padding: 40px;
+            .datos_personales {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-bottom: 20px;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+                .imagen_cv {
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    img {
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                h2 {
+                    color: map-get($paletaColores,"blanco");
+                    font-size: 1,5em;
+                    margin-top: 20px;
+                    text-transform: uppercase;
+                    text-align: center;
+                    font-weight: 600;
+                    line-height: 1,5em;
+                    span {
+                        font-size: 0.8em;
+                        font-weight: 300;
+                    }
+                }
+            }
+            .datos_cv {
+                padding-top: 40px;
+                .titulo_cv {
+                    text-transform: capitalize;
+                    color: map-get($paletaColores,"blanco");
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    margin-bottom: 20px;
+
+                }
+                ul {
+                    
+                    li {
+                        list-style: none;
+                        margin: 10px 0;
+                        cursor: pointer;
+                        .icono_cv {
+                            display: inline-block;
+                            width: 30px;
+                        }
+                        .texto_cv {
+                            color: map-get($paletaColores,"blanco");
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+            .estudios {
+                text-transform: uppercase;
+                padding-top: 80px;
+                .estudios_cv {
+                    color: map-get($paletaColores,"blanco");
+                    
+                }
+            }
+        }
+        .derecha {
+            background: map-get($paletaColores,"blanco");
+            padding: 40px;
+            .sobre_mi {
+                margin-bottom: 50px;
+                .titulo2 {
+                    color: rgb(39, 84, 92);
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    margin-bottom: 10px;
+                }
+            }
+            .intereses {
+                padding-top: 50px;
+                text-transform: uppercase;
+                color: rgb(39, 84, 92);
+                    }
+                }
+            }
+        }
+
+
+@media (max-width: 1500px) { 
+
+ }
+
+@media (max-width: 1200px) { 
+
+ }
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 768px) {
+    .cv {
+        .contenedor {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+            "izquierda"
+            "derecha";
+            .izquierda {
+                grid-area: izquierda;
+            }
+            .derecha {
+                grid-area: derecha;
+            }
+        }
+    }
+
+ }
+@media (max-width: 600px) {
+
+ }
+@media (max-width: 480px) {
+
+ }
+@media (max-width: 320px) {
+
+ }

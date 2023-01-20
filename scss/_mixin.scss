@@ -1,0 +1,11 @@
+@mixin titulo-sombreado {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px 0 10px 0;
+    font-size:2rem;
+    color: rgba(0, 0, 0, 0.9);
+    letter-spacing: .05em;
+    text-shadow: 
+    4px 4px 0px rgb(255,255,255), 
+    7px 7px 0px rgba(0, 0, 0, 0.3);;
+}
