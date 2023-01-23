@@ -324,7 +324,7 @@
   .cv .contenedor {
     width: 100%;
     max-width: 1000px;
-    min-height: 1000px;
+    min-height: 100%;
     margin: 50px;
     background: #faf0fa;
     display: grid;
@@ -332,7 +332,8 @@
     box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1); }
     .cv .contenedor .izquierda {
       background: #27545c;
-      padding: 40px; }
+      padding: 40px;
+      height: 100%; }
       .cv .contenedor .izquierda .datos_personales {
         display: flex;
         flex-direction: column;
@@ -384,9 +385,13 @@
         padding-top: 80px; }
         .cv .contenedor .izquierda .estudios .estudios_cv {
           color: #faf0fa; }
+        .cv .contenedor .izquierda .estudios ul li h5 {
+          color: #faf0fa;
+          margin: 2px 0; }
     .cv .contenedor .derecha {
       background: #faf0fa;
-      padding: 40px; }
+      padding: 20px 40px;
+      top: 0; }
       .cv .contenedor .derecha .sobre_mi {
         margin-bottom: 50px; }
         .cv .contenedor .derecha .sobre_mi .titulo2 {
@@ -394,18 +399,36 @@
           text-transform: uppercase;
           letter-spacing: 1px;
           margin-bottom: 10px; }
-      .cv .contenedor .derecha .intereses {
-        padding-top: 50px;
+        .cv .contenedor .derecha .sobre_mi p {
+          line-height: 1.5rem; }
+      .cv .contenedor .derecha .experiencia .titulo2 {
+        color: #27545c;
         text-transform: uppercase;
-        color: #27545c; }
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        line-height: 1.5rem; }
+      .cv .contenedor .derecha .experiencia .compania h3 {
+        margin: 5px 0; }
+      .cv .contenedor .derecha .experiencia .texto h4 {
+        margin: 5px 0; }
+      .cv .contenedor .derecha .experiencia .texto p {
+        line-height: 1.5rem; }
+      .cv .contenedor .derecha .redes .titulo2 {
+        color: #27545c;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin: 20px 0; }
+      .cv .contenedor .derecha .redes img {
+        margin: 20px; }
 
 @media (max-width: 768px) {
   .cv .contenedor {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas: "izquierda" "derecha"; }
     .cv .contenedor .izquierda {
-      grid-area: izquierda; }
+      grid-area: izquierda;
+      height: 110vh; }
     .cv .contenedor .derecha {
       grid-area: derecha; } }

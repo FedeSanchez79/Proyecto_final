@@ -8,7 +8,7 @@
     .contenedor {
         width: 100%;
         max-width: 1000px;
-        min-height: 1000px;
+        min-height: 100%;
         margin: 50px;
         background: map-get($paletaColores,"blanco");
         display: grid;
@@ -17,6 +17,7 @@
         .izquierda {
             background: rgb(39, 84, 92);
             padding: 40px;
+            height: 100%;
             .datos_personales {
                 display: flex;
                 flex-direction: column;
@@ -82,13 +83,21 @@
                 padding-top: 80px;
                 .estudios_cv {
                     color: map-get($paletaColores,"blanco");
-                    
+                }
+                ul {
+                    li {
+                        h5 {
+                            color: $color-header;
+                            margin: 2px 0;
+                        }
+                    }
                 }
             }
         }
         .derecha {
             background: map-get($paletaColores,"blanco");
-            padding: 40px;
+            padding: 20px 40px;
+            top: 0;
             .sobre_mi {
                 margin-bottom: 50px;
                 .titulo2 {
@@ -97,16 +106,46 @@
                     letter-spacing: 1px;
                     margin-bottom: 10px;
                 }
+                p {
+                    line-height: 1.5rem;
+                }              
             }
-            .intereses {
-                padding-top: 50px;
-                text-transform: uppercase;
-                color: rgb(39, 84, 92);
+            .experiencia {
+                .titulo2 {
+                    color: rgb(39, 84, 92);
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    margin-bottom: 10px;
+                    line-height: 1.5rem;
+                }
+                .compania {
+                    h3 {
+                        margin: 5px 0;
+                    }
+                }
+                .texto {
+                    h4 {
+                        margin: 5px 0;
+                    }
+                    p {
+                        line-height: 1.5rem;
                     }
                 }
             }
+            .redes {
+                .titulo2 {
+                    color: rgb(39, 84, 92);
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    margin:20px 0;
+                }
+                img {
+                    margin: 20px;
+                }
+            }
         }
-
+    }
+}
 
 @media (max-width: 1500px) { 
 
@@ -124,12 +163,13 @@
         .contenedor {
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr;
+            grid-template-rows: 1fr;
             grid-template-areas: 
             "izquierda"
             "derecha";
             .izquierda {
                 grid-area: izquierda;
+                height: 110vh;
             }
             .derecha {
                 grid-area: derecha;
