@@ -3,37 +3,43 @@
   padding: 0;
   box-sizing: border-box; }
 
-.header {
-  width: 100%;
-  background-image: linear-gradient(to bottom, #4c4a4a, #807575, #afacac); }
-  .header .header__superior {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 10px; }
-  .header .titulos .titulo_principal h1 {
-    text-transform: capitalize;
-    color: #faf0fa; }
-  .header .titulos .subtitulo h2 {
-    text-transform: capitalize;
-    color: #faf0fa; }
-  .header .header_inferior {
+.body {
+  height: 1000px; }
+  .body .header {
+    width: 100%;
+    background-color: #4c4a4a;
+    position: fixed;
+    z-index: 1000; }
+    .body .header .header__superior {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      padding: 10px; }
+    .body .header .titulos .titulo_principal h1 {
+      text-transform: capitalize;
+      color: #faf0fa; }
+    .body .header .titulos .subtitulo h2 {
+      text-transform: capitalize;
+      color: #faf0fa; }
+  .body .header_inferior {
     background-color: #3fc2cb;
     width: 100%;
-    margin: 0; }
-    .header .header_inferior .menu {
+    margin: 0;
+    padding: 5px 0; }
+    .body .header_inferior .menu {
       padding: 0px 20px; }
-      .header .header_inferior .menu ul {
+      .body .header_inferior .menu ul {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
         height: 100%;
         display: flex; }
-        .header .header_inferior .menu ul li {
+        .body .header_inferior .menu ul li {
           padding-left: 5px;
           height: 100%;
           list-style: none; }
-          .header .header_inferior .menu ul li a {
+          .body .header_inferior .menu ul li a {
             width: 100%;
             height: 100%;
             background-color: #3fc2cb;
@@ -43,171 +49,159 @@
             color: #faf0fa;
             text-transform: uppercase;
             transition: all 300ms ease; }
-            .header .header_inferior .menu ul li a:hover {
-              transform: scale(1.1);
-              color: #849a9c; }
+            .body .header_inferior .menu ul li a:hover {
+              box-shadow: 0 0 10px 0 #faf0fa inset, 0 0 10px 4px #faf0fa; }
 
 .main {
   width: 100%;
-  margin-bottom: 0; }
-  .main #imagenLab {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    background-image: url(../assets/images/fondo_trabajo3.jpg);
-    width: 100%;
-    padding: 10px 0; }
-    .main #imagenLab #nuestros_trabajos {
-      position: relative;
-      display: block;
-      padding: 25px;
-      border-radius: 6px;
-      text-align: center;
-      font-weight: bold;
-      overflow: hidden;
-      cursor: pointer;
-      box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.9);
-      text-decoration: none;
-      transition: all ease 0.5s;
-      background: #3fc2cb;
-      margin: 20px; }
-      .main #imagenLab #nuestros_trabajos a {
-        text-decoration: none;
-        color: #faf0fa; }
-      .main #imagenLab #nuestros_trabajos:after, .main #imagenLab #nuestros_trabajos:before {
-        width: 80px;
-        height: 200px;
-        content: '';
-        display: block;
-        background: rgba(255, 255, 255, 0.5);
-        transform: rotate(45deg);
-        top: -60px;
-        position: absolute;
-        transition: none;
-        right: -45%;
-        cursor: pointer; }
-      .main #imagenLab #nuestros_trabajos:before {
-        left: -48%; }
-      .main #imagenLab #nuestros_trabajos:hover {
-        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
-        background: #3fc2cb; }
-      .main #imagenLab #nuestros_trabajos:hover:after, .main #imagenLab #nuestros_trabajos:hover:before {
-        transform: rotate(45deg), scaleX(130%);
-        background: rgba(255, 255, 255, 0.1);
-        transition: all ease 0.5s; }
-      .main #imagenLab #nuestros_trabajos:hover:after {
-        right: 130%; }
-      .main #imagenLab #nuestros_trabajos:hover:before {
-        left: 130%; }
-    .main #imagenLab img {
-      height: 600px; }
-  .main .datos {
-    height: 15vh;
+  margin-bottom: 0;
+  background-image: url(../assets/images/laboratorio-dental2.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left;
+  background-size: 150vmax; }
+  .main .espacio {
+    height: 100vh;
+    width: 100vw;
+    max-width: 1600px;
+    min-width: 320px; }
+  .main .frase {
+    height: 20vh;
     background-color: #4c4a4a;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     font-weight: 900;
-    text-decoration: none; }
-  .main .datos__titulo {
-    color: #faf0fa;
-    text-transform: capitalize; }
-  .main .datos__info {
+    text-decoration: none;
+    text-align: center;
     color: #3fc2cb;
-    font-size: large; }
-  .main .datos__info2 {
-    color: #3fc2cb;
-    font-size: large;
-    text-transform: capitalize; }
-  .main .icono {
-    margin: 3px; }
-  .main #imagen_index {
-    background-color: black;
-    padding-left: 25%;
-    position: relative;
-    overflow: hidden;
-    width: 100%; }
-    .main #imagen_index figcaption {
-      color: #3fc2cb;
-      background-color: rgba(128, 117, 117, 0.3);
-      transition: all 0.3s;
-      position: absolute;
-      left: 0px;
-      bottom: -200px;
+    font-size: x-large; }
+  .main .contenedor {
+    width: 100vw;
+    max-width: 1600px;
+    min-width: 320px;
+    margin: auto;
+    display: flex;
+    flex-direction: row; }
+    .main .contenedor .c_img {
+      margin: 0 15px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      cursor: pointer; }
+      .main .contenedor .c_img img {
+        width: 100%; }
+    .main .contenedor .c_txt {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       width: 100%;
-      padding: 2%;
-      font-size: large;
-      font-weight: 900; }
-    .main #imagen_index:hover figcaption {
-      bottom: 0px; }
+      height: 100%;
+      text-align: center;
+      position: absolute;
+      transition: all .3s;
+      transform: scale(1.5);
+      opacity: 0; }
+      .main .contenedor .c_txt:hover {
+        transform: scale(1);
+        opacity: 1;
+        background: rgba(80, 78, 78, 0.8); }
+      .main .contenedor .c_txt h3 {
+        color: #faf0fa;
+        font-size: large;
+        text-transform: uppercase; }
+      .main .contenedor .c_txt ul {
+        list-style: none;
+        color: #3fc2cb;
+        padding: 10px;
+        font-size: large;
+        font-weight: 900;
+        text-transform: uppercase;
+        line-height: 2rem; }
+      .main .contenedor .c_txt p {
+        color: #3fc2cb;
+        padding: 10px;
+        font-size: large;
+        font-weight: 900;
+        text-transform: uppercase;
+        line-height: 2rem; }
 
 .footer {
-  background-image: linear-gradient(to top, #4c4a4a, #807575, #afacac);
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  grid-template-areas: "foodat redsocial cv";
-  height: 10vh;
+  background-color: #4c4a4a;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 20vh;
   width: 100%;
   color: #faf0fa;
   font-weight: 900;
-  padding: 1% 0% 0% 2%; }
-  .footer .footer__datos {
-    grid-area: foodat; }
-  .footer .redsocial {
-    grid-area: redsocial; }
-  .footer .cv_icono {
-    grid-area: cv; }
+  padding: 20px 20px 0 20px; }
 
-@media (max-width: 1500px) {
-  .main #imagenLab img {
-    width: 60vw; } }
+@media (max-width: 1600px) {
+  .main .espacio
+.contenedor {
+    height: 100%; }
+  .footer {
+    height: 20vh; } }
 
 @media (max-width: 1200px) {
-  .main #imagenLab img {
-    width: 60vw; }
-  .main #imagen_index img {
-    width: 60vw; }
+  .main .espacio {
+    width: 100%; }
+  .main .contenedor {
+    height: 100%; }
   .footer {
-    height: 10vh; } }
+    height: 20vh; } }
 
 @media (max-width: 1024px) {
-  main #imagenLab img {
-    width: 55vw; }
-  main .datos .icono img {
-    width: 30px; }
-  main #imagen_index figcaption {
-    display: none; }
+  .main {
+    background-size: cover; }
+    .main .frase {
+      height: 15vh; }
+    .main .contenedor {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .main .contenedor .c_img {
+        margin: 0 200px; }
+        .main .contenedor .c_img img {
+          height: 50vh; }
   .footer {
-    height: 10vh; } }
-
-@media (min-width: 768px) and (max-width: 920px) {
-  main #imagen_index figcaption {
-    display: none; } }
+    height: 20vh; } }
 
 @media (max-width: 768px) {
-  .main #imagenLab {
+  .header .header_inferior .menu ul {
     display: flex;
     flex-direction: column;
-    justify-content: center; }
-    .main #imagenLab img {
-      width: 80%; }
-  .main .datos {
-    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    line-height: 2rem; }
+  .main .contenedor {
+    height: 100%;
     display: flex;
-    flex-direction: column; }
-  .main #imagen_index figcaption {
-    display: none; }
+    flex-direction: column;
+    align-items: center; }
+    .main .contenedor .c_txt h3 {
+      font-size: small; }
+    .main .contenedor .c_txt ul {
+      font-size: small; }
+    .main .contenedor .c_txt p {
+      font-size: small; }
+    .main .contenedor .c_img {
+      margin: 0 50px; }
   .footer {
-    height: 100%; }
+    height: 20vh; }
     .footer .redsocial img {
       width: 2em; } }
 
 @media (max-width: 600px) {
-  .main #imagenLab img {
-    height: 350px; }
+  .main .contenedor {
+    height: 100%; }
   .footer {
     display: flex;
     flex-direction: column;
@@ -224,8 +218,10 @@
 @media (max-width: 480px) {
   header .header__superior .logo {
     display: none; }
-  .main #imagen_index figcaption {
-    display: none; }
+  header .contenedor {
+    height: 100%; }
+    header .contenedor .c_img {
+      margin: 0 20px; }
   .footer {
     display: flex;
     flex-direction: column; }
@@ -236,8 +232,8 @@
       width: 2em; } }
 
 @media (max-width: 320px) {
-  .main #imagen_index figcaption {
-    display: none; }
+  .main .contenedor {
+    height: 100%; }
   .footer {
     display: flex;
     flex-direction: column; }
@@ -247,116 +243,76 @@
     .footer .cv_icono img {
       width: 2em; } }
 
-.body_protesis {
+.main_tp section #cromo {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px 0 10px 0;
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.9);
+  letter-spacing: .05em;
+  text-shadow: 4px 4px 0px white, 7px 7px 0px rgba(0, 0, 0, 0.3); }
+
+.main_tp section #flexible {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px 0 10px 0;
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.9);
+  letter-spacing: .05em;
+  text-shadow: 4px 4px 0px white, 7px 7px 0px rgba(0, 0, 0, 0.3); }
+
+.main_tp section #acrilico {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px 0 10px 0;
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.9);
+  letter-spacing: .05em;
+  text-shadow: 4px 4px 0px white, 7px 7px 0px rgba(0, 0, 0, 0.3); }
+
+.main_tp section #fija {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px 0 10px 0;
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.9);
+  letter-spacing: .05em;
+  text-shadow: 4px 4px 0px white, 7px 7px 0px rgba(0, 0, 0, 0.3); }
+
+.main_tp section .imagenProtesis {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+  .main_tp section .imagenProtesis img {
+    width: 40%;
+    height: 600px; }
+
+.main_tp .tablas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%; }
-  .body_protesis .header {
-    width: 100%;
-    background-image: linear-gradient(to bottom, #4c4a4a, #807575, #afacac); }
-    .body_protesis .header .header__superior {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      padding: 10px; }
-    .body_protesis .header .titulos .titulo_principal h1 {
-      text-transform: capitalize;
-      color: #faf0fa; }
-    .body_protesis .header .titulos .subtitulo h2 {
-      text-transform: capitalize;
-      color: #faf0fa; }
-    .body_protesis .header .header_inferior {
+  .main_tp .tablas .titulos_protesis {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px 0 10px 0;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.9);
+    letter-spacing: .05em;
+    text-shadow: 4px 4px 0px white, 7px 7px 0px rgba(0, 0, 0, 0.2); }
+  .main_tp .tablas .tablas_tabla table {
+    background-color: #414040;
+    width: 50%;
+    position: static;
+    text-align: center;
+    margin: 20px 400px; }
+    .main_tp .tablas .tablas_tabla table th {
       background-color: #3fc2cb;
-      width: 100%;
-      margin: 0; }
-      .body_protesis .header .header_inferior .menu {
-        padding: 0px 20px; }
-        .body_protesis .header .header_inferior .menu ul {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          height: 100%;
-          display: flex; }
-          .body_protesis .header .header_inferior .menu ul li {
-            padding-left: 5px;
-            height: 100%;
-            list-style: none; }
-            .body_protesis .header .header_inferior .menu ul li a {
-              width: 100%;
-              height: 100%;
-              background-color: #3fc2cb;
-              font-size: large;
-              font-weight: 900;
-              text-decoration: none;
-              color: #faf0fa;
-              text-transform: uppercase;
-              transition: all 300ms ease; }
-              .body_protesis .header .header_inferior .menu ul li a:hover {
-                transform: scale(1.1);
-                color: #849a9c; }
-  .body_protesis .main_tp section #cromo {
-    text-align: center;
-    text-transform: uppercase;
-    padding: 5px 0 10px 0;
-    font-size: 2rem;
-    color: rgba(0, 0, 0, 0.9);
-    letter-spacing: .05em;
-    text-shadow: 4px 4px 0px white, 7px 7px 0px rgba(0, 0, 0, 0.3); }
-  .body_protesis .main_tp section #flexible {
-    text-align: center;
-    text-transform: uppercase;
-    padding: 5px 0 10px 0;
-    font-size: 2rem;
-    color: rgba(0, 0, 0, 0.9);
-    letter-spacing: .05em;
-    text-shadow: 4px 4px 0px white, 7px 7px 0px rgba(0, 0, 0, 0.3); }
-  .body_protesis .main_tp section #acrilico {
-    text-align: center;
-    text-transform: uppercase;
-    padding: 5px 0 10px 0;
-    font-size: 2rem;
-    color: rgba(0, 0, 0, 0.9);
-    letter-spacing: .05em;
-    text-shadow: 4px 4px 0px white, 7px 7px 0px rgba(0, 0, 0, 0.3); }
-  .body_protesis .main_tp section #fija {
-    text-align: center;
-    text-transform: uppercase;
-    padding: 5px 0 10px 0;
-    font-size: 2rem;
-    color: rgba(0, 0, 0, 0.9);
-    letter-spacing: .05em;
-    text-shadow: 4px 4px 0px white, 7px 7px 0px rgba(0, 0, 0, 0.3); }
-  .body_protesis .main_tp section .imagenProtesis {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly; }
-    .body_protesis .main_tp section .imagenProtesis img {
-      width: 40%;
-      height: 600px; }
-  .body_protesis .main_tp .tablas {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%; }
-    .body_protesis .main_tp .tablas .titulos_protesis {
-      text-align: center;
-      text-transform: uppercase;
-      padding: 5px 0 10px 0;
-      font-size: 2rem;
-      color: rgba(0, 0, 0, 0.9);
-      letter-spacing: .05em;
-      text-shadow: 4px 4px 0px white, 7px 7px 0px rgba(0, 0, 0, 0.2); }
-    .body_protesis .main_tp .tablas .tablas_tabla table {
-      background-color: #414040;
-      width: 50%;
-      position: static;
-      text-align: center;
-      margin: 20px 400px; }
-      .body_protesis .main_tp .tablas .tablas_tabla table th {
-        background-color: #3fc2cb;
-        color: white; }
-      .body_protesis .main_tp .tablas .tablas_tabla table tr td {
-        background-color: #3fc2cb;
-        color: white; }
+      color: white; }
+    .main_tp .tablas .tablas_tabla table tr td {
+      background-color: #3fc2cb;
+      color: white; }
 
 .cv {
   background-color: #b1ecf7;
@@ -453,10 +409,3 @@
       grid-area: izquierda; }
     .cv .contenedor .derecha {
       grid-area: derecha; } }
-
-.body_contacto {
-  background-image: url(../assets/images/contacto.png);
-  background-position: left;
-  background-size: 50%;
-  background-repeat: no-repeat;
-  margin: 0 5px; }
