@@ -1,13 +1,15 @@
-@mixin titulo-sombreado {
-    text-align: center;
+@mixin parrafo-oculto {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0;
+    justify-content: center;
+    line-height: 1rem;
+    font-size: medium;
+    font-weight: 900;
     text-transform: uppercase;
-    padding: 5px 0 10px 0;
-    font-size:2rem;
-    color: rgba(0, 0, 0, 0.9);
-    letter-spacing: .05em;
-    text-shadow: 
-    4px 4px 0px rgb(255,255,255), 
-    7px 7px 0px rgba(0, 0, 0, 0.3);;
+    text-align: center;
 }
 
 @mixin texto-hover {
@@ -16,4 +18,12 @@
     font-weight: 900;
     text-transform: uppercase;
     line-height: 2rem;
+}
+
+@mixin protesis-animacion {
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    border: 2px solid $color-boton;
+    border-radius: 10%;
 }

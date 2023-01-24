@@ -27,14 +27,19 @@
     width: 100%;
     margin: 0;
     padding: 5px 0; }
+    .body .header_inferior #toggle {
+      display: none;
+      cursor: pointer; }
+    .body .header_inferior label {
+      display: none;
+      cursor: pointer; }
     .body .header_inferior .menu {
       padding: 0px 20px; }
       .body .header_inferior .menu ul {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        height: 100%;
-        display: flex; }
+        height: 100%; }
         .body .header_inferior .menu ul li {
           padding-left: 5px;
           height: 100%;
@@ -58,8 +63,8 @@
   background-image: url(../assets/images/laboratorio-dental2.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: left;
-  background-size: 150vmax; }
+  background-position: center;
+  background-size: cover; }
   .main .espacio {
     height: 100vh;
     width: 100vw;
@@ -158,29 +163,45 @@
     height: 20vh; } }
 
 @media (max-width: 1024px) {
-  .main {
-    background-size: cover; }
-    .main .frase {
-      height: 15vh; }
-    .main .contenedor {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      .main .contenedor .c_img {
-        margin: 0 200px; }
-        .main .contenedor .c_img img {
-          height: 50vh; }
+  .main .frase {
+    height: 15vh; }
+  .main .contenedor {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .main .contenedor .c_img {
+      margin: 0 200px; }
+      .main .contenedor .c_img img {
+        height: 50vh; }
   .footer {
     height: 20vh; } }
 
 @media (max-width: 768px) {
-  .header .header_inferior .menu ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    line-height: 2rem; }
+  .header .header_inferior label {
+    display: initial;
+    padding-left: 20px; }
+  .header .header_inferior .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: none;
+    padding: 0;
+    margin-top: 0;
+    background-color: #3fc2cb; }
+    .header .header_inferior .menu ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      line-height: 2rem;
+      background-color: transparent; }
+      .header .header_inferior .menu ul li {
+        width: 100%;
+        margin: 0; }
+  .header #toggle:checked ~ .menu {
+    display: block; }
   .main .contenedor {
     height: 100%;
     display: flex;
@@ -243,76 +264,219 @@
     .footer .cv_icono img {
       width: 2em; } }
 
-.main_tp section #cromo {
-  text-align: center;
-  text-transform: uppercase;
-  padding: 5px 0 10px 0;
-  font-size: 2rem;
-  color: rgba(0, 0, 0, 0.9);
-  letter-spacing: .05em;
-  text-shadow: 4px 4px 0px white, 7px 7px 0px rgba(0, 0, 0, 0.3); }
+.main_tp {
+  width: 100%;
+  background-image: url(../assets/images/dentista-protesis-dental-paterna.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  background-size: cover; }
+  .main_tp .imagen_protesis {
+    display: grid;
+    grid-template-areas: "cromo flexible" "acril fija";
+    position: relative;
+    align-items: center; }
+    .main_tp .imagen_protesis #slider1 {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 10px 0;
+      justify-content: center;
+      line-height: 1rem;
+      font-size: medium;
+      font-weight: 900;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 150px 20px 20px 20px;
+      overflow: hidden; }
+      .main_tp .imagen_protesis #slider1 #cromo {
+        position: relative;
+        opacity: 1;
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+        border: 2px solid #3fc2cb;
+        border-radius: 10%;
+        grid-area: cromo; }
+      .main_tp .imagen_protesis #slider1:hover .img1 {
+        opacity: .5; }
+      .main_tp .imagen_protesis #slider1 .txt_hidden {
+        position: absolute;
+        transition: all .3s;
+        transform: scale(1.5);
+        opacity: 0;
+        width: 300px;
+        cursor: pointer; }
+        .main_tp .imagen_protesis #slider1 .txt_hidden:hover {
+          opacity: 1;
+          transform: scale(1); }
+        .main_tp .imagen_protesis #slider1 .txt_hidden p {
+          line-height: 2rem; }
+    .main_tp .imagen_protesis #slider2 {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 10px 0;
+      justify-content: center;
+      line-height: 1rem;
+      font-size: medium;
+      font-weight: 900;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 150px 20px 20px 20px;
+      overflow: hidden; }
+      .main_tp .imagen_protesis #slider2 #flexible {
+        position: relative;
+        opacity: 1;
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+        border: 2px solid #3fc2cb;
+        border-radius: 10%;
+        grid-area: flexible; }
+      .main_tp .imagen_protesis #slider2:hover .img1 {
+        opacity: .5; }
+      .main_tp .imagen_protesis #slider2 .txt_hidden {
+        position: absolute;
+        transition: all .3s;
+        transform: scale(1.5);
+        opacity: 0;
+        width: fit-content;
+        height: fit-content;
+        width: 300px;
+        cursor: pointer; }
+        .main_tp .imagen_protesis #slider2 .txt_hidden:hover {
+          opacity: 1;
+          transform: scale(1); }
+        .main_tp .imagen_protesis #slider2 .txt_hidden p {
+          line-height: 2rem; }
+    .main_tp .imagen_protesis #slider3 {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 10px 0;
+      justify-content: center;
+      line-height: 1rem;
+      font-size: medium;
+      font-weight: 900;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 20px;
+      overflow: hidden; }
+      .main_tp .imagen_protesis #slider3 #acrilico {
+        position: relative;
+        opacity: 1;
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+        border: 2px solid #3fc2cb;
+        border-radius: 10%;
+        grid-area: acril; }
+      .main_tp .imagen_protesis #slider3:hover .img1 {
+        opacity: .5; }
+      .main_tp .imagen_protesis #slider3 .txt_hidden {
+        position: absolute;
+        transition: all .3s;
+        transform: scale(1.5);
+        opacity: 0;
+        width: fit-content;
+        height: fit-content;
+        width: 300px;
+        cursor: pointer; }
+        .main_tp .imagen_protesis #slider3 .txt_hidden:hover {
+          opacity: 1;
+          transform: scale(1); }
+        .main_tp .imagen_protesis #slider3 .txt_hidden p {
+          line-height: 2rem; }
+    .main_tp .imagen_protesis #slider4 {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 10px 0;
+      justify-content: center;
+      line-height: 1rem;
+      font-size: medium;
+      font-weight: 900;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 20px;
+      overflow: hidden; }
+      .main_tp .imagen_protesis #slider4 #fija {
+        position: relative;
+        opacity: 1;
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+        border: 2px solid #3fc2cb;
+        border-radius: 10%;
+        grid-area: fija; }
+      .main_tp .imagen_protesis #slider4:hover .img1 {
+        opacity: .5; }
+      .main_tp .imagen_protesis #slider4 .txt_hidden {
+        position: absolute;
+        transition: all .3s;
+        transform: scale(1.5);
+        opacity: 0;
+        width: fit-content;
+        height: fit-content;
+        width: 300px;
+        cursor: pointer; }
+        .main_tp .imagen_protesis #slider4 .txt_hidden:hover {
+          opacity: 1;
+          transform: scale(1); }
+        .main_tp .imagen_protesis #slider4 .txt_hidden p {
+          line-height: 2rem; }
 
-.main_tp section #flexible {
-  text-align: center;
-  text-transform: uppercase;
-  padding: 5px 0 10px 0;
-  font-size: 2rem;
-  color: rgba(0, 0, 0, 0.9);
-  letter-spacing: .05em;
-  text-shadow: 4px 4px 0px white, 7px 7px 0px rgba(0, 0, 0, 0.3); }
+@media (max-width: 1200px) {
+  .main_tp {
+    width: 100%; } }
 
-.main_tp section #acrilico {
-  text-align: center;
-  text-transform: uppercase;
-  padding: 5px 0 10px 0;
-  font-size: 2rem;
-  color: rgba(0, 0, 0, 0.9);
-  letter-spacing: .05em;
-  text-shadow: 4px 4px 0px white, 7px 7px 0px rgba(0, 0, 0, 0.3); }
+@media (max-width: 1024px) {
+  .main_tp .imagen_protesis {
+    display: flex;
+    flex-direction: column; }
+    .main_tp .imagen_protesis #slider2 {
+      padding-top: 50px; } }
 
-.main_tp section #fija {
-  text-align: center;
-  text-transform: uppercase;
-  padding: 5px 0 10px 0;
-  font-size: 2rem;
-  color: rgba(0, 0, 0, 0.9);
-  letter-spacing: .05em;
-  text-shadow: 4px 4px 0px white, 7px 7px 0px rgba(0, 0, 0, 0.3); }
+@media (max-width: 600px) {
+  .main_tp .imagen_protesis #slider1 #cromo {
+    width: 400px; }
+  .main_tp .imagen_protesis #slider2 #flexible {
+    width: 400px; }
+  .main_tp .imagen_protesis #slider3 #acrilico {
+    width: 400px; }
+  .main_tp .imagen_protesis #slider4 #fija {
+    width: 400px; } }
 
-.main_tp section .imagenProtesis {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly; }
-  .main_tp section .imagenProtesis img {
-    width: 40%;
-    height: 600px; }
+@media (max-width: 480px) {
+  .body {
+    width: 480px; }
+    .body .main_tp .imagen_protesis #slider1 {
+      margin-left: 30px; }
+      .body .main_tp .imagen_protesis #slider1 #cromo {
+        width: 350px; }
+    .body .main_tp .imagen_protesis #slider2 {
+      margin-left: 30px; }
+      .body .main_tp .imagen_protesis #slider2 #flexible {
+        width: 350px; }
+    .body .main_tp .imagen_protesis #slider3 {
+      margin-left: 30px; }
+      .body .main_tp .imagen_protesis #slider3 #acrilico {
+        width: 350px; }
+    .body .main_tp .imagen_protesis #slider4 {
+      margin-left: 30px; }
+      .body .main_tp .imagen_protesis #slider4 #fija {
+        width: 350px; } }
 
-.main_tp .tablas {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%; }
-  .main_tp .tablas .titulos_protesis {
-    text-align: center;
-    text-transform: uppercase;
-    padding: 5px 0 10px 0;
-    font-size: 2rem;
-    color: rgba(0, 0, 0, 0.9);
-    letter-spacing: .05em;
-    text-shadow: 4px 4px 0px white, 7px 7px 0px rgba(0, 0, 0, 0.2); }
-  .main_tp .tablas .tablas_tabla table {
-    background-color: #414040;
-    width: 50%;
-    position: static;
-    text-align: center;
-    margin: 20px 400px; }
-    .main_tp .tablas .tablas_tabla table th {
-      background-color: #3fc2cb;
-      color: white; }
-    .main_tp .tablas .tablas_tabla table tr td {
-      background-color: #3fc2cb;
-      color: white; }
+@media (max-width: 320px) {
+  .main_tp .imagen_protesis #slider1 {
+    margin-left: 30px; }
+  .main_tp .imagen_protesis #slider2 {
+    margin-left: 30px; }
+  .main_tp .imagen_protesis #slider3 {
+    margin-left: 30px; }
+  .main_tp .imagen_protesis #slider4 {
+    margin-left: 30px; } }
 
 .cv {
   background-color: #b1ecf7;

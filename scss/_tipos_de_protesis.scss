@@ -1,78 +1,161 @@
 
 
     .main_tp {
-        section {
-            #cromo{
-                @include titulo-sombreado;
-                 }
-            #flexible {
-                @include titulo-sombreado;
-            }
-            #acrilico {
-                @include titulo-sombreado;
-            }
-            #fija {
-                @include titulo-sombreado;
-            }
-            .imagenProtesis {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-                img {
-                    width: 40%;
-                    height: 600px;
-                }
-            }
-        }
-        .tablas {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+        width: 100%;
+        background-image: url(../assets/images/dentista-protesis-dental-paterna.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: top;
+        background-size: cover;
+        .imagen_protesis {
+            display: grid;
+            grid-template-areas:
+            "cromo flexible"
+            "acril fija";
+            position: relative;
             align-items: center;
-            width: 100%;
-            .titulos_protesis {
-                text-align: center;
-                text-transform: uppercase;
-                padding: 5px 0 10px 0;
-                font-size:2rem;
-                color: rgba(0, 0, 0, 0.9);
-                letter-spacing: .05em;
-                text-shadow: 
-                4px 4px 0px rgb(255,255,255), 
-                7px 7px 0px rgba(0, 0, 0, 0.2);;
-            }
-            .tablas_tabla { 
-                table {
-                    background-color: rgb(65, 64, 64);
-                    width: 50%;
-                    position: static;
-                    text-align: center;
-                    margin: 20px 400px;
-                    th {
-                        background-color: map-get($paletaColores,"esmeralda");
-                        color: rgb(255,255,255); 
+            #slider1 {
+                @include parrafo-oculto;
+                padding: 150px 20px 20px 20px;
+                overflow: hidden;
+                #cromo {     
+                    position: relative; 
+                    @include protesis-animacion;
+                    grid-area: cromo;
+                }
+                &:hover .img1 {
+                    opacity: .5;
+                }
+                .txt_hidden {
+                    position: absolute;
+                    transition: all .3s;
+                    transform: scale(1.5);
+                    opacity: 0;
+                    width: 300px;
+                    cursor: pointer; 
+                    &:hover {
+                        opacity: 1;
+                        transform: scale(1);
                     }
-                    tr {
-                        
-                        td {
-                            background-color: map-get($paletaColores,"esmeralda");
-                            color: rgb(255,255,255);
-                        }
+                    p {
+                        line-height: 2rem;
                     }
                 }
-            }    
+            }
+            #slider2 {
+                @include parrafo-oculto;
+                padding: 150px 20px 20px 20px;
+                overflow: hidden;
+                #flexible {
+                    position: relative; 
+                    @include protesis-animacion;
+                    grid-area: flexible;
+                }
+                &:hover .img1 {
+                    opacity: .5;
+                }
+                .txt_hidden {
+                    position: absolute;
+                    transition: all .3s;
+                    transform: scale(1.5);
+                    opacity: 0;
+                    width: fit-content;
+                    height: fit-content;
+                    width: 300px;
+                    cursor: pointer;  
+                    &:hover {
+                        opacity: 1;
+                        transform: scale(1);
+                    }
+                    p {
+                        line-height: 2rem;
+                    }
+                }
+            }
+            #slider3 {
+                @include parrafo-oculto;
+                padding: 20px;
+                overflow: hidden;
+                #acrilico {
+                    position: relative; 
+                    @include protesis-animacion;
+                    grid-area: acril;
+                }
+                &:hover .img1 {
+                    opacity: .5;
+                }
+                .txt_hidden {
+                    position: absolute;
+                    transition: all .3s;
+                    transform: scale(1.5);
+                    opacity: 0;
+                    width: fit-content;
+                    height: fit-content;
+                    width: 300px;
+                    cursor: pointer;  
+                    &:hover {
+                        opacity: 1;
+                        transform: scale(1);
+                    }
+                    p {
+                        line-height: 2rem;
+                    }
+                }
+            }
+            #slider4 {
+                 @include parrafo-oculto; 
+                 padding: 20px;   
+                 overflow: hidden;         
+                #fija {
+                    position: relative; 
+                    @include protesis-animacion;
+                    grid-area: fija;
+                }
+                &:hover .img1 {
+                    opacity: .5;
+                }
+                .txt_hidden {
+                    position: absolute;
+                    transition: all .3s;
+                    transform: scale(1.5);
+                    opacity: 0;
+                    width: fit-content;
+                    height: fit-content;
+                    width: 300px;
+                    cursor: pointer;  
+                    &:hover {
+                        opacity: 1;
+                        transform: scale(1);
+                    }
+                    p {
+                        line-height: 2rem;
+                    }
+                }
+            }
         }
     }
+
+
 
 @media (max-width: 1500px) { 
 
 }
 
 @media (max-width: 1200px)  { 
-
+    .main_tp {
+        width: 100%;
+    }
  }
 @media (max-width: 1024px) {
-
+    .main_tp {
+        .imagen_protesis {
+            display: flex;
+            flex-direction: column;
+            #slider2 {
+                padding-top: 50px;
+            }
+        }
+    }
 } 
 
 @media (max-width: 768px) {
@@ -80,12 +163,85 @@
  }
 
 @media (max-width: 600px) {
-
+    .main_tp{
+        .imagen_protesis {
+            #slider1 {
+                #cromo {
+                    width: 400px;
+                }
+            }
+            #slider2 {
+                #flexible {
+                    width: 400px;
+                }
+            }
+            #slider3 {
+                #acrilico {
+                    width: 400px;
+                }
+            }
+            #slider4 {
+                #fija {
+                    width: 400px;
+                }
+            }
+        }
+    }
  }
 @media (max-width: 480px) {
+    .body {
+        width: 480px;   
+        .main_tp{
+            .imagen_protesis {
+                #slider1 {
+                    margin-left: 30px;
+                    #cromo {
+                        width: 350px;
+                    }
+                }
+                #slider2 {
+                    margin-left: 30px;
+                    #flexible {
+                        width: 350px;
+                    }
+                }
+                #slider3 {
+                    margin-left: 30px;
+                    #acrilico {
+                        width: 350px;
+                    }
+                }
+                #slider4 {
+                    margin-left: 30px;
+                    #fija {
+                        width: 350px;
+                    }
+                }
+            }
+        }
+    }
+} 
 
- }
 @media (max-width: 320px) {
+    .main_tp{
+        .imagen_protesis {
+            #slider1 {
+                margin-left: 30px;
 
+            }
+            #slider2 {
+                margin-left: 30px;
+
+            }
+            #slider3 {
+                margin-left: 30px;
+
+            }
+            #slider4 {
+                margin-left: 30px;
+
+            }
+        }
+    }
  }
  
