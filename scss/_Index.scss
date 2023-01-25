@@ -151,12 +151,12 @@
                 }
                 ul {
                     list-style: none;
-                    color: $color-boton;
-                    @include texto-hover;
+                    @include color_boton ();
+                    @include texto-hover ( 10px , large , 900 , uppercase , 2rem );
                 }
                 p {
-                    color: $color-boton;
-                    @include texto-hover;
+                    @include color_boton ();
+                    @include texto-hover ( 10px , large , 900 , uppercase , 2rem );
                 }
             }
         }
@@ -176,7 +176,7 @@
         padding: 20px 20px 0 20px;
     }
 
-@media (max-width: 1600px) { 
+@media screen and (max-width: 1600px) { 
     .main {
         .espacio
         .contenedor {
@@ -188,7 +188,7 @@
     }
 }
 
-@media (max-width: 1200px) { 
+@media screen and (max-width: 1200px) { 
     .main {
         .espacio {
             width: 100%;
@@ -201,7 +201,7 @@
         height: 20vh;
     }
  }
-@media (max-width: 1024px){
+@media screen and (max-width: 1024px){
     .main {
         .frase {
             height: 15vh;
@@ -225,7 +225,7 @@
     }
       
 
-@media (max-width: 768px){
+@media screen and (max-width: 768px){
     .header {
         .header_inferior {
             label {
@@ -291,7 +291,7 @@
     }
  }
 
-@media (max-width: 600px){
+@media screen and (max-width: 600px){
     .main {
         .contenedor {
            height: 100%;
@@ -318,7 +318,7 @@
         }
     }
  }
-@media (max-width: 480px){
+@media screen and (max-width: 480px){
     header {
         .header__superior {
             .logo {
@@ -352,7 +352,7 @@
         }
     }
  }
-@media (max-width: 320px){
+@media screen and (max-width: 320px){
     .main {
         .contenedor {
            height: 100%;

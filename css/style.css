@@ -147,14 +147,14 @@
   font-weight: 900;
   padding: 20px 20px 0 20px; }
 
-@media (max-width: 1600px) {
+@media screen and (max-width: 1600px) {
   .main .espacio
 .contenedor {
     height: 100%; }
   .footer {
     height: 20vh; } }
 
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .main .espacio {
     width: 100%; }
   .main .contenedor {
@@ -162,7 +162,7 @@
   .footer {
     height: 20vh; } }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .main .frase {
     height: 15vh; }
   .main .contenedor {
@@ -177,7 +177,7 @@
   .footer {
     height: 20vh; } }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .header .header_inferior label {
     display: initial;
     padding-left: 20px; }
@@ -220,7 +220,7 @@
     .footer .redsocial img {
       width: 2em; } }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .main .contenedor {
     height: 100%; }
   .footer {
@@ -236,7 +236,7 @@
     .footer .cv_icono img {
       width: 2em; } }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   header .header__superior .logo {
     display: none; }
   header .contenedor {
@@ -252,7 +252,7 @@
     .footer .cv_icono img {
       width: 2em; } }
 
-@media (max-width: 320px) {
+@media screen and (max-width: 320px) {
   .main .contenedor {
     height: 100%; }
   .footer {
@@ -427,18 +427,18 @@
         .main_tp .imagen_protesis #slider4 .txt_hidden p {
           line-height: 2rem; }
 
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .main_tp {
     width: 100%; } }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .main_tp .imagen_protesis {
     display: flex;
     flex-direction: column; }
     .main_tp .imagen_protesis #slider2 {
       padding-top: 50px; } }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .main_tp .imagen_protesis #slider1 #cromo {
     width: 400px; }
   .main_tp .imagen_protesis #slider2 #flexible {
@@ -448,7 +448,7 @@
   .main_tp .imagen_protesis #slider4 #fija {
     width: 400px; } }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .body {
     width: 480px; }
     .body .main_tp .imagen_protesis #slider1 {
@@ -468,7 +468,7 @@
       .body .main_tp .imagen_protesis #slider4 #fija {
         width: 350px; } }
 
-@media (max-width: 320px) {
+@media screen and (max-width: 320px) {
   .main_tp .imagen_protesis #slider1 {
     margin-left: 30px; }
   .main_tp .imagen_protesis #slider2 {
@@ -477,6 +477,78 @@
     margin-left: 30px; }
   .main_tp .imagen_protesis #slider4 {
     margin-left: 30px; } }
+
+form {
+  padding: 20px; }
+  form label {
+    margin: 15px 0px;
+    clear: both;
+    display: block; }
+  form input {
+    padding: 4px;
+    border: solid 1px #262626; }
+  form ::placeholder, form option, form value {
+    color: #31a3dd;
+    font-weight: bold; }
+  form input[type="submit"] {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: #31a3dd;
+    border: solid 1px #ededed; }
+
+.main_nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 150px 100px;
+  background-image: url(../assets/images/valplast_udelldental_01.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover; }
+  .main_nosotros h2 {
+    padding: 300px 0;
+    color: #3fc2cb; }
+  .main_nosotros #seccion1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly; }
+    .main_nosotros #seccion1 .seccion__txt {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .main_nosotros #seccion1 .seccion__txt p {
+        padding: 20px 150px; }
+  .main_nosotros #seccion2 {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly; }
+    .main_nosotros #seccion2 .seccion__txt {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .main_nosotros #seccion2 .seccion__txt p {
+        padding: 20px 150px; }
+  .main_nosotros #seccion3 {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly; }
+    .main_nosotros #seccion3 .seccion__txt {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .main_nosotros #seccion3 .seccion__txt p {
+        padding: 20px 150px; }
 
 .cv {
   background-color: #b1ecf7;
@@ -585,7 +657,7 @@
       .cv .contenedor .derecha .redes img {
         margin: 20px; }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .cv .contenedor {
     display: grid;
     grid-template-columns: 1fr;

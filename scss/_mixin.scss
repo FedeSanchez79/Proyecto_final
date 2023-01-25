@@ -12,18 +12,36 @@
     text-align: center;
 }
 
-@mixin texto-hover {
-    padding: 10px;
-    font-size: large;
-    font-weight: 900;
-    text-transform: uppercase;
-    line-height: 2rem;
-}
-
 @mixin protesis-animacion {
     opacity: 1;
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
     border: 2px solid $color-boton;
     border-radius: 10%;
+}
+
+@mixin texto-hover( $padding , $tamaño , $ancho-texto, $mayuscula , $alto-linea){
+    padding: $padding;
+    font-size: $tamaño;
+    font-weight: $ancho-texto;
+    text-transform: $mayuscula;
+    line-height: $alto-linea;
+}
+
+@mixin color_boton ($color-header : $color-boton){
+    color: $color-header;
+}
+
+@mixin secciones ( $display , $direccion , $align , $justify ) {
+    display: $display;
+    flex-direction: $direccion;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin nosotros-alineacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

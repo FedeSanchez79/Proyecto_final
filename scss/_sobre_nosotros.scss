@@ -1,1 +1,69 @@
-  
+.main_nosotros {
+    @include nosotros-alineacion;
+    padding: 150px 100px;
+    background-image: url(../assets/images/valplast_udelldental_01.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    h2 {
+        padding: 300px 0;
+        color: $color-boton;
+    }
+    #seccion1 {
+        @include secciones ( flex , row , center , space-evenly );
+        img {
+
+        }
+        .seccion__txt {
+            @include nosotros-alineacion;
+            h3 {
+
+            }
+            p {
+                padding: 20px 150px;
+            }
+            a {
+
+            }
+        }
+    }
+    #seccion2 {
+        padding-top: 50px;
+        @include secciones ( flex , row , center , space-evenly );
+        .seccion__txt {
+            @include nosotros-alineacion;
+            h3 {
+
+            }
+            p {
+                padding: 20px 150px;
+            }
+            a {
+
+            }
+        }
+        img {
+
+        }
+    }
+    #seccion3 {
+        padding-top: 50px;
+        @include secciones ( flex , row , center , space-evenly );
+        img {
+
+        }
+        .seccion__txt {
+            @include nosotros-alineacion;
+            h3 {
+
+            }
+            p {
+                padding: 20px 150px;
+            }
+            a {
+
+            }
+        }
+    }
+}
