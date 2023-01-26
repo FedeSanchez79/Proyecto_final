@@ -1,25 +1,93 @@
 
-
-form {
-    padding: 20px;
-    label {
-        margin: 15px 0px;
-        clear: both;
-        display: block;
+  
+  .main_contacto {
+    background-image: url(../assets/images/degradado-difuminado-verde_3840x2400_xtrafondos.com.jpg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
+    height: 100%;
+    .contacto_up {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+            form {
+            display: flex;
+            flex-direction: column;
+            width: 650px;
+            padding: 10px 20px;
+            margin-top: 50px;
+            box-sizing: border-box;
+            border-radius: 7px;
+            h2 {
+                color: #fff;
+                text-align: center;
+                margin: 0;
+                font-size: 15px;
+                margin-bottom: 20px;
+                padding-top: 150px;
+                text-transform: uppercase;
+            }
+            textarea {
+                width: 100%;
+                margin-bottom: 30px;
+                padding: 7px;
+                box-sizing: border-box;
+                background-color:transparent;
+                border: 2px solid rgba(63, 194, 203, 0.8);
+            }
+            textarea::placeholder {
+                color: $color-header;
+            }
+            .input {
+                margin-bottom: 20px;
+                height: 20px;
+                border-bottom: 2px solid rgb(63, 194, 203);
+                border-top:rgba(0, 0, 0, 0);
+                border-left: rgba(0, 0, 0, 0);
+                border-right: rgba(0, 0, 0, 0);
+                background-color:transparent;
+                
+            }
+            .input::placeholder {
+                color: $color-header;
+            }
+            #boton {
+                width: 200px;
+                margin-left: 200px;
+                color: $color-header;
+                font-weight: 900;
+                background-color: rgba(63, 194, 203, 0.8);
+                border: 2px solid rgb(63, 194, 203);
+            } 
+            #boton:hover {
+                cursor: pointer;
+            }
+        }
     }
-    input {
-        padding: 4px;
-        border: solid 1px #262626;
-    }
-    ::placeholder, option, value {
-        color: #31a3dd; 
-        font-weight: bold;
-    }
-    input[type="submit"] {
-        padding: 10px 20px; 
-        text-transform: uppercase; 
-        cursor: pointer; 
-        background-color: #31a3dd; 
-        border: solid 1px #ededed;
+    .contacto_down {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 100px;
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: $color-header;
+            font-weight: 900;
+            img {
+            } 
+            p {
+                padding: 20px;
+                text-align: center;
+                strong {
+                    color: $color-boton;
+                    font-size: larger;
+                }
+            }
+        }
+        #faded1 {
+            animation-delay: 2s;
+        }
     }
 }

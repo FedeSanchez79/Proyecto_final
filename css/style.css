@@ -264,168 +264,123 @@
     .footer .cv_icono img {
       width: 2em; } }
 
-.main_tp {
-  width: 100%;
-  background-image: url(../assets/images/dentista-protesis-dental-paterna.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: top;
-  background-size: cover; }
-  .main_tp .imagen_protesis {
-    display: grid;
-    grid-template-areas: "cromo flexible" "acril fija";
-    position: relative;
-    align-items: center; }
-    .main_tp .imagen_protesis #slider1 {
-      list-style: none;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      margin: 10px 0;
-      justify-content: center;
-      line-height: 1rem;
-      font-size: medium;
-      font-weight: 900;
-      text-transform: uppercase;
-      text-align: center;
-      padding: 150px 20px 20px 20px;
-      overflow: hidden; }
-      .main_tp .imagen_protesis #slider1 #cromo {
-        position: relative;
-        opacity: 1;
-        -webkit-transition: .3s ease-in-out;
-        transition: .3s ease-in-out;
-        border: 2px solid #3fc2cb;
-        border-radius: 10%;
-        grid-area: cromo; }
-      .main_tp .imagen_protesis #slider1:hover .img1 {
-        opacity: .5; }
-      .main_tp .imagen_protesis #slider1 .txt_hidden {
-        position: absolute;
-        transition: all .3s;
-        transform: scale(1.5);
-        opacity: 0;
-        width: 300px;
-        cursor: pointer; }
-        .main_tp .imagen_protesis #slider1 .txt_hidden:hover {
-          opacity: 1;
-          transform: scale(1); }
-        .main_tp .imagen_protesis #slider1 .txt_hidden p {
-          line-height: 2rem; }
-    .main_tp .imagen_protesis #slider2 {
-      list-style: none;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      margin: 10px 0;
-      justify-content: center;
-      line-height: 1rem;
-      font-size: medium;
-      font-weight: 900;
-      text-transform: uppercase;
-      text-align: center;
-      padding: 150px 20px 20px 20px;
-      overflow: hidden; }
-      .main_tp .imagen_protesis #slider2 #flexible {
-        position: relative;
-        opacity: 1;
-        -webkit-transition: .3s ease-in-out;
-        transition: .3s ease-in-out;
-        border: 2px solid #3fc2cb;
-        border-radius: 10%;
-        grid-area: flexible; }
-      .main_tp .imagen_protesis #slider2:hover .img1 {
-        opacity: .5; }
-      .main_tp .imagen_protesis #slider2 .txt_hidden {
-        position: absolute;
-        transition: all .3s;
-        transform: scale(1.5);
-        opacity: 0;
-        width: fit-content;
-        height: fit-content;
-        width: 300px;
-        cursor: pointer; }
-        .main_tp .imagen_protesis #slider2 .txt_hidden:hover {
-          opacity: 1;
-          transform: scale(1); }
-        .main_tp .imagen_protesis #slider2 .txt_hidden p {
-          line-height: 2rem; }
-    .main_tp .imagen_protesis #slider3 {
-      list-style: none;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      margin: 10px 0;
-      justify-content: center;
-      line-height: 1rem;
-      font-size: medium;
-      font-weight: 900;
-      text-transform: uppercase;
-      text-align: center;
-      padding: 20px;
-      overflow: hidden; }
-      .main_tp .imagen_protesis #slider3 #acrilico {
-        position: relative;
-        opacity: 1;
-        -webkit-transition: .3s ease-in-out;
-        transition: .3s ease-in-out;
-        border: 2px solid #3fc2cb;
-        border-radius: 10%;
-        grid-area: acril; }
-      .main_tp .imagen_protesis #slider3:hover .img1 {
-        opacity: .5; }
-      .main_tp .imagen_protesis #slider3 .txt_hidden {
-        position: absolute;
-        transition: all .3s;
-        transform: scale(1.5);
-        opacity: 0;
-        width: fit-content;
-        height: fit-content;
-        width: 300px;
-        cursor: pointer; }
-        .main_tp .imagen_protesis #slider3 .txt_hidden:hover {
-          opacity: 1;
-          transform: scale(1); }
-        .main_tp .imagen_protesis #slider3 .txt_hidden p {
-          line-height: 2rem; }
-    .main_tp .imagen_protesis #slider4 {
-      list-style: none;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      margin: 10px 0;
-      justify-content: center;
-      line-height: 1rem;
-      font-size: medium;
-      font-weight: 900;
-      text-transform: uppercase;
-      text-align: center;
-      padding: 20px;
-      overflow: hidden; }
-      .main_tp .imagen_protesis #slider4 #fija {
-        position: relative;
-        opacity: 1;
-        -webkit-transition: .3s ease-in-out;
-        transition: .3s ease-in-out;
-        border: 2px solid #3fc2cb;
-        border-radius: 10%;
-        grid-area: fija; }
-      .main_tp .imagen_protesis #slider4:hover .img1 {
-        opacity: .5; }
-      .main_tp .imagen_protesis #slider4 .txt_hidden {
-        position: absolute;
-        transition: all .3s;
-        transform: scale(1.5);
-        opacity: 0;
-        width: fit-content;
-        height: fit-content;
-        width: 300px;
-        cursor: pointer; }
-        .main_tp .imagen_protesis #slider4 .txt_hidden:hover {
-          opacity: 1;
-          transform: scale(1); }
-        .main_tp .imagen_protesis #slider4 .txt_hidden p {
-          line-height: 2rem; }
+.main_tp h1 {
+  padding: 250px 0 50px 0;
+  text-align: center; }
+
+.main_tp .linea {
+  border-top: 5px solid #3fc2cb;
+  height: 2px;
+  max-width: 200px;
+  padding: 0;
+  margin: 10px auto 20px auto; }
+
+.main_tp p {
+  text-align: center;
+  font-size: x-large;
+  font-weight: 900;
+  padding-bottom: 50px; }
+
+.main_tp .imagen_protesis {
+  display: flex;
+  flex-direction: column; }
+  .main_tp .imagen_protesis #slider1 {
+    display: flex;
+    flex-direction: row; }
+    .main_tp .imagen_protesis #slider1 #cromo {
+      width: 50%; }
+    .main_tp .imagen_protesis #slider1 .txt_hidden {
+      width: 50%;
+      flex-wrap: wrap;
+      background-color: #b6b6b4; }
+      .main_tp .imagen_protesis #slider1 .txt_hidden h2 {
+        padding-top: 50px;
+        margin-left: 50px;
+        text-transform: uppercase;
+        text-align: left; }
+      .main_tp .imagen_protesis #slider1 .txt_hidden p {
+        margin: 10px 0;
+        line-height: 3rem;
+        font-size: medium;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-align: left;
+        padding: 50px; }
+      .main_tp .imagen_protesis #slider1 .txt_hidden img {
+        margin: 50px 0 0 50px; }
+  .main_tp .imagen_protesis #slider2 {
+    display: flex;
+    flex-direction: row-reverse; }
+    .main_tp .imagen_protesis #slider2 #flexible {
+      width: 50%; }
+    .main_tp .imagen_protesis #slider2 .txt_hidden {
+      width: 50%;
+      flex-wrap: wrap;
+      background-color: #fdbdff; }
+      .main_tp .imagen_protesis #slider2 .txt_hidden h2 {
+        padding-top: 50px;
+        margin-left: 50px;
+        text-transform: uppercase;
+        text-align: left; }
+      .main_tp .imagen_protesis #slider2 .txt_hidden p {
+        margin: 10px 0;
+        line-height: 3rem;
+        font-size: medium;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-align: left;
+        padding: 50px; }
+      .main_tp .imagen_protesis #slider2 .txt_hidden img {
+        margin: 50px 0 0 50px; }
+  .main_tp .imagen_protesis #slider3 {
+    display: flex;
+    flex-direction: row; }
+    .main_tp .imagen_protesis #slider3 #acrilico {
+      width: 50%; }
+    .main_tp .imagen_protesis #slider3 .txt_hidden {
+      width: 50%;
+      flex-wrap: wrap;
+      background-color: #9bf8c2; }
+      .main_tp .imagen_protesis #slider3 .txt_hidden h2 {
+        padding-top: 50px;
+        margin-left: 50px;
+        text-transform: uppercase;
+        text-align: left; }
+      .main_tp .imagen_protesis #slider3 .txt_hidden p {
+        margin: 10px 0;
+        line-height: 3rem;
+        font-size: medium;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-align: left;
+        padding: 50px; }
+      .main_tp .imagen_protesis #slider3 .txt_hidden img {
+        margin: 50px 0 0 50px; }
+  .main_tp .imagen_protesis #slider4 {
+    display: flex;
+    flex-direction: row-reverse; }
+    .main_tp .imagen_protesis #slider4 #fija {
+      width: 50%; }
+    .main_tp .imagen_protesis #slider4 .txt_hidden {
+      width: 50%;
+      flex-wrap: wrap;
+      align-items: left;
+      background-color: #e7ffc8; }
+      .main_tp .imagen_protesis #slider4 .txt_hidden h2 {
+        padding-top: 50px;
+        margin-left: 50px;
+        text-transform: uppercase;
+        text-align: left; }
+      .main_tp .imagen_protesis #slider4 .txt_hidden img {
+        margin: 50px 0 0 50px; }
+      .main_tp .imagen_protesis #slider4 .txt_hidden p {
+        margin: 10px 0;
+        line-height: 3rem;
+        font-size: medium;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-align: left;
+        padding: 50px; }
 
 @media screen and (max-width: 1200px) {
   .main_tp {
@@ -478,24 +433,79 @@
   .main_tp .imagen_protesis #slider4 {
     margin-left: 30px; } }
 
-form {
-  padding: 20px; }
-  form label {
-    margin: 15px 0px;
-    clear: both;
-    display: block; }
-  form input {
-    padding: 4px;
-    border: solid 1px #262626; }
-  form ::placeholder, form option, form value {
-    color: #31a3dd;
-    font-weight: bold; }
-  form input[type="submit"] {
-    padding: 10px 20px;
-    text-transform: uppercase;
-    cursor: pointer;
-    background-color: #31a3dd;
-    border: solid 1px #ededed; }
+.main_contacto {
+  background-image: url(../assets/images/degradado-difuminado-verde_3840x2400_xtrafondos.com.jpg);
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  margin: 0;
+  height: 100%; }
+  .main_contacto .contacto_up {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .main_contacto .contacto_up form {
+      display: flex;
+      flex-direction: column;
+      width: 650px;
+      padding: 10px 20px;
+      margin-top: 50px;
+      box-sizing: border-box;
+      border-radius: 7px; }
+      .main_contacto .contacto_up form h2 {
+        color: #fff;
+        text-align: center;
+        margin: 0;
+        font-size: 15px;
+        margin-bottom: 20px;
+        padding-top: 150px;
+        text-transform: uppercase; }
+      .main_contacto .contacto_up form textarea {
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 7px;
+        box-sizing: border-box;
+        background-color: transparent;
+        border: 2px solid rgba(63, 194, 203, 0.8); }
+      .main_contacto .contacto_up form textarea::placeholder {
+        color: #faf0fa; }
+      .main_contacto .contacto_up form .input {
+        margin-bottom: 20px;
+        height: 20px;
+        border-bottom: 2px solid #3fc2cb;
+        border-top: rgba(0, 0, 0, 0);
+        border-left: rgba(0, 0, 0, 0);
+        border-right: rgba(0, 0, 0, 0);
+        background-color: transparent; }
+      .main_contacto .contacto_up form .input::placeholder {
+        color: #faf0fa; }
+      .main_contacto .contacto_up form #boton {
+        width: 200px;
+        margin-left: 200px;
+        color: #faf0fa;
+        font-weight: 900;
+        background-color: rgba(63, 194, 203, 0.8);
+        border: 2px solid #3fc2cb; }
+      .main_contacto .contacto_up form #boton:hover {
+        cursor: pointer; }
+  .main_contacto .contacto_down {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 100px; }
+    .main_contacto .contacto_down div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #faf0fa;
+      font-weight: 900; }
+      .main_contacto .contacto_down div p {
+        padding: 20px;
+        text-align: center; }
+        .main_contacto .contacto_down div p strong {
+          color: #3fc2cb;
+          font-size: larger; }
+    .main_contacto .contacto_down #faded1 {
+      animation-delay: 2s; }
 
 .main_nosotros {
   display: flex;
@@ -503,26 +513,43 @@ form {
   align-items: center;
   justify-content: center;
   padding: 150px 100px;
-  background-image: url(../assets/images/valplast_udelldental_01.jpg);
+  background-color: aliceblue;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover; }
   .main_nosotros h2 {
-    padding: 300px 0;
-    color: #3fc2cb; }
+    padding: 100px 0;
+    color: #3fc2cb;
+    font-size: xx-large; }
   .main_nosotros #seccion1 {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly; }
+    .main_nosotros #seccion1 img {
+      border-radius: 80%; }
     .main_nosotros #seccion1 .seccion__txt {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center; }
+      .main_nosotros #seccion1 .seccion__txt h3 {
+        text-transform: uppercase;
+        color: #414b4a; }
       .main_nosotros #seccion1 .seccion__txt p {
-        padding: 20px 150px; }
+        padding: 20px 150px;
+        color: #414b4a;
+        line-height: 2rem; }
+      .main_nosotros #seccion1 .seccion__txt .boton {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #faf0fa;
+        font-weight: 900;
+        border: 2px solid #3fc2cb;
+        background-color: #3fc2cb;
+        padding: 10px 100px;
+        cursor: pointer; }
   .main_nosotros #seccion2 {
     padding-top: 50px;
     display: flex;
@@ -534,21 +561,54 @@ form {
       flex-direction: column;
       align-items: center;
       justify-content: center; }
+      .main_nosotros #seccion2 .seccion__txt h3 {
+        text-transform: uppercase;
+        color: #414b4a; }
       .main_nosotros #seccion2 .seccion__txt p {
-        padding: 20px 150px; }
+        padding: 20px 150px;
+        color: #414b4a;
+        line-height: 2rem; }
+      .main_nosotros #seccion2 .seccion__txt .boton {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #faf0fa;
+        font-weight: 900;
+        border: 2px solid #3fc2cb;
+        background-color: #3fc2cb;
+        padding: 10px 100px;
+        cursor: pointer; }
+    .main_nosotros #seccion2 img {
+      border-radius: 50%; }
   .main_nosotros #seccion3 {
     padding-top: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly; }
+    .main_nosotros #seccion3 img {
+      border-radius: 50%; }
     .main_nosotros #seccion3 .seccion__txt {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center; }
+      .main_nosotros #seccion3 .seccion__txt h3 {
+        text-transform: uppercase;
+        color: #414b4a;
+        font-weight: 900; }
       .main_nosotros #seccion3 .seccion__txt p {
-        padding: 20px 150px; }
+        padding: 20px 150px;
+        color: #414b4a;
+        line-height: 2rem; }
+      .main_nosotros #seccion3 .seccion__txt .boton {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #faf0fa;
+        font-weight: 900;
+        border: 2px solid #3fc2cb;
+        background-color: #3fc2cb;
+        padding: 10px 100px;
+        cursor: pointer; }
 
 .cv {
   background-color: #b1ecf7;

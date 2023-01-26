@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
   <title>contacto</title>
  </head>
@@ -40,38 +41,35 @@
 			</nav>     
 		</div>    
 	</header> 
-    <main>
-        <h2>FORMULARIO DE CONTACTO:</h2>
-            <form action="enviar-formulario.php" method="post"><label>Nombre:</label>
-            <input maxlength="50" name="nombre" required size="50" type="text" autofocus placeholder="Escribe tu nombre" /><label>Email:</label>
-            <input name="email" required type="email" placeholder="Escribe tu email" />
-            <label>Teléfono</label>
-            <input name="telefono" pattern="[0-9]{9}" required type="tel" placeholder="XXXXXXXXX" />
-            <label>Tu web:</label>
-            <input name="tu-url" type="url" placeholder="www.miweb.com" />
-            <label form="cars">Seleccionar navegador:</label>
-            <select name="navegador" required>
-            <option value="Chrome">Chrome</option>
-            <option value="Firefox">Firefox</option>
-            <option value="Edge">Edge</option>
-            </select>
-            <label>Aficiones:</label>
-            <input list="aficiones" type="text" />
-            <datalist id="aficiones">
-            <option value="Viajar"></option>
-            <option value="Leer"></option></datalist>
-            <label>Rango:</label>
-            <input max="20" min="5" type="range" />
-            <label>Selecciona tu color favorito:</label>
-            <input name="color-favorito" type="color" />
-            <label>Fecha:</label>
-            <input name="fecha" type="date" />
-            <label>Hora:</label>
-            <input type="time" name="hora">
-            <textarea cols="80" name="observaciones" rows="8">
-            Puedes escribir aquí tus observaciones...</textarea>
-            <input type="submit" value="Enviar" />
+    <main class="main_contacto">
+        <section class="contacto_up">
+            <form action="">
+                <h2>escribinos y te contactamos a la brevedad!</h2>
+                <input type="text" class="input" name="Nombre" placeholder="Nombre">
+                <input type="text" class="input" name="correo" placeholder="Correo">
+                <input type="text" class="input" name="telefono" placeholder="Telefono">
+                <textarea name="mensaje" placeholder="Escriba su comentario" cols="30" rows="10"></textarea>
+                <input type="button" name="enviar" value="ENVIAR" id="boton">
             </form>
+        </section>
+        <section class="contacto_down">
+            <div data-aos="fade-up">
+                <img src="../assets/images/email.png" alt="">
+                <p><strong>E-mail:</strong>fedesanchez@gmail.com</p>
+            </div>
+            <div data-aos="fade-up"data-aos-duration="1000">
+                <img src="../assets/images/atencion-al-cliente.png" alt="">
+                <p><strong>Horario de atencion:</strong>Lu-Vi 9 a 18 hs</p>
+            </div>
+            <div data-aos="fade-up"data-aos-duration="2000">
+                <img src="../assets/images/mapas-y-banderas.png" alt="">
+                <p><strong>Direccion:</strong>Av. Siempreviva 742</p>
+            </div>
+            <div data-aos="fade-up"data-aos-duration="3000">
+                <img src="../assets/images/llamada-telefonica.png" alt="">
+                <p><strong>Telefono:</strong>011-1111-1111</p>
+            </div>
+        </section>
     </main>
     <footer class="footer">
 		<p class="footer__datos">Posted by: Federico Sanchez
@@ -88,5 +86,9 @@
 			<a href="https://www.linkedin.com/" target="_blank"><img src="../assets/images/linkedin1.png" alt="linkedin"></a>
 			<a href="https://www.twitter.com/" target="_blank"><img src="../assets/images/twitter1.png" alt="twitter"></a>
 	</footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
  </body>
 </html>

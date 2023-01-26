@@ -9,6 +9,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="../css/style.css">
 	<title>tipos de protesis y sus materiales</title>
  </head>
@@ -41,31 +42,43 @@
 		</div>    
 	</header> 
 	<main class="main_tp">	
-			<div class="imagen_protesis">
-				<div id="slider1">
-					<img id="cromo" src="../assets/images/cromo cobalto.JPG" alt="un cromo inferior">
-					<div class="txt_hidden">
-						<p>Se utilizan en colados dentales de prótesis parciales y ciertos tipos de puentes. Sus ventajas son su menor peso, su resistencia a la corrosión, son más económicos y los inconvenientes su técnica compleja, la alta temperatura para su colado, su difícil pulido.</p>		
-					</div>												
+		<h1>¿Que tipo de protesis necesitas?</h1>
+		<div class="linea"></div>
+		<p>Conoce mas sobre los diferentes materiales utilizados.</p>
+		<div class="imagen_protesis">
+			<div id="slider1">
+				<img id="cromo" src="../assets/images/cromo cobalto.JPG" alt="un cromo inferior">
+				<div class="txt_hidden">
+					<img src="../assets/images/cromos.png" alt="un icno de fundicion">
+					<h2 data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">cromo-cobalto</h2>
+					<p>Se utilizan en colados dentales de prótesis parciales y ciertos tipos de puentes. Sus ventajas son su menor peso, su resistencia a la corrosión, son más económicos y los inconvenientes su técnica compleja, la alta temperatura para su colado, su difícil pulido.</p>		
+		    	</div>
+			</div>
+			<div id="slider2">												
+				<img id="flexible" src="../assets/images/protesis-flexibles.jpg" alt="una protesis flexible">
+				<div class="txt_hidden">
+					<img src="../assets/images/flex.png" alt="icono de flexibilidad">
+					<h2 data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">protesis flexibles</h2>
+					<p>Las prótesis dentales flexibles son un tipo de prótesis removible que se pueden poner y quitar. Suelen estar hechas por un material llamado nylon. Se trata de un material casi transparente y que puede fabricarse de un color parecido a la encía.</p>		
+		    	</div>
+			</div>
+			<div id="slider3">											
+				<img id="acrilico" src="../assets/images/protesis completa superior.jpg" alt="una protesis completa de acrilico">
+				<div class="txt_hidden">
+					<img src="../assets/images/acrilico.png" alt="un icono de dentaduras">
+					<h2 data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">protesis de acrilico</h2>
+					<p>Este tipo de prótesis removible es también de quitar y poner y está fabricada, como su propio nombre indica, de un material denominado acrílico. El acrílico es un tipo de plástico rígido pero sin llegar a ser metal. Este tipo de prótesis se utiliza en pacientes con muy poquitos dientes.</p>
 				</div>
-				<div id="slider2">					
-					<img id="flexible" src="../assets/images/protesis-flexibles.jpg" alt="una protesis flexible">
-					<div class="txt_hidden">
-						<p>Las prótesis dentales flexibles son un tipo de prótesis removible que se pueden poner y quitar. Suelen estar hechas por un material llamado nylon. Se trata de un material casi transparente y que puede fabricarse de un color parecido a la encía.</p>		
-					</div>											
+			</div>	
+			<div id="slider4">								
+				<img id="fija" src="../assets/images/rehabilitacion-completa-fija.jpg" alt="un puente de porcelana">
+				<div class="txt_hidden">
+					<img src="../assets/images/corona-dental.png" alt="un icono de una corona dental">
+					<h2 data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">coronas de  porcelana</h2>
+					<p>La prótesis dental fija: cualquier prótesis que no puede ser retirada por el paciente. Es muy similar a los dientes naturales. Existen las prótesis fijas que se sujetan sobre el diente natural del paciente. Sobre el diente natural, tras realizar un tallado, se encaja y cementa la prótesis.</p>	
 				</div>
-				<div id="slider3">					
-					<img id="acrilico" src="../assets/images/protesis completa superior.jpg" alt="una protesis completa de acrilico">
-					<div class="txt_hidden">
-						<p>Este tipo de prótesis removible es también de quitar y poner y está fabricada, como su propio nombre indica, de un material denominado acrílico. El acrílico es un tipo de plástico rígido pero sin llegar a ser metal. Este tipo de prótesis se utiliza en pacientes con muy poquitos dientes.</p>
-					</div>									
-				</div>
-				<div id="slider4">					
-			 		<img id="fija" src="../assets/images/rehabilitacion-completa-fija.jpg" alt="un puente de porcelana">
-					<div class="txt_hidden">
-						<p>La prótesis dental fija: cualquier prótesis que no puede ser retirada por el paciente. Es muy similar a los dientes naturales. Existen las prótesis fijas que se sujetan sobre el diente natural del paciente. Sobre el diente natural, tras realizar un tallado, se encaja y cementa la prótesis.</p>	
-					</div>									
-				</div>		
+			</div>									
+	    </div>			
 	</main>
 	<footer class="footer">
 		<p class="footer__datos">Posted by: Federico Sanchez
@@ -82,5 +95,9 @@
 			<a href="https://www.linkedin.com/" target="_blank"><img src="../assets/images/linkedin1.png" alt="linkedin"></a>
 			<a href="https://www.twitter.com/" target="_blank"><img src="../assets/images/twitter1.png" alt="twitter"></a>
 	</footer> 
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
  </body>
 </html>

@@ -1,32 +1,44 @@
 .main_nosotros {
     @include nosotros-alineacion;
     padding: 150px 100px;
-    background-image: url(../assets/images/valplast_udelldental_01.jpg);
+    background-color:aliceblue;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     h2 {
-        padding: 300px 0;
+        padding: 100px 0;
         color: $color-boton;
+        font-size: xx-large;
     }
     #seccion1 {
         @include secciones ( flex , row , center , space-evenly );
         img {
-
+            border-radius: 80%;
         }
         .seccion__txt {
             @include nosotros-alineacion;
+        
             h3 {
-
+                text-transform: uppercase;
+                color: rgb(65, 75, 74);
             }
             p {
                 padding: 20px 150px;
+                color: rgb(65, 75, 74);
+                line-height: 2rem;
             }
-            a {
-
+            .boton {
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $color-header;
+                font-weight: 900;
+                border: 2px solid $color-boton;
+                background-color: $color-boton;
+                padding: 10px 100px;
+                cursor: pointer;
             }
-        }
+        }    
     }
     #seccion2 {
         padding-top: 50px;
@@ -34,35 +46,56 @@
         .seccion__txt {
             @include nosotros-alineacion;
             h3 {
-
+                text-transform: uppercase;
+                color: rgb(65, 75, 74);
             }
             p {
                 padding: 20px 150px;
+                color: rgb(65, 75, 74);
+                line-height: 2rem;
             }
-            a {
-
+            .boton {
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $color-header;
+                font-weight: 900;
+                border: 2px solid $color-boton;
+                background-color: $color-boton;
+                padding: 10px 100px;
+                cursor: pointer;
             }
         }
         img {
-
+            border-radius: 50%;
         }
     }
     #seccion3 {
         padding-top: 50px;
         @include secciones ( flex , row , center , space-evenly );
         img {
-
+            border-radius: 50%;
         }
         .seccion__txt {
             @include nosotros-alineacion;
             h3 {
-
+                text-transform: uppercase;
+                color: rgb(65, 75, 74);
+                font-weight: 900;
             }
             p {
                 padding: 20px 150px;
+                color: rgb(65, 75, 74);
+                line-height: 2rem;
             }
-            a {
-
+            .boton {
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $color-header;
+                font-weight: 900;
+                border: 2px solid $color-boton;
+                background-color: $color-boton;
+                padding: 10px 100px;
+                cursor: pointer;
             }
         }
     }

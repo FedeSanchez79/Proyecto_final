@@ -1,140 +1,133 @@
 
 
     .main_tp {
-        width: 100%;
-        background-image: url(../assets/images/dentista-protesis-dental-paterna.jpg);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: top;
-        background-size: cover;
+
+        h1 {
+            padding: 250px 0 50px 0;
+            text-align: center;
+        }
+        .linea {
+            border-top: 5px solid $color-boton;
+            height: 2px;
+            max-width: 200px;
+            padding: 0;
+            margin: 10px auto 20px auto;
+          }
+        p {
+            text-align: center;
+            font-size: x-large;
+            font-weight: 900;
+            padding-bottom: 50px ;
+        }
         .imagen_protesis {
-            display: grid;
-            grid-template-areas:
-            "cromo flexible"
-            "acril fija";
-            position: relative;
-            align-items: center;
+            display: flex;
+            flex-direction: column;
             #slider1 {
-                @include parrafo-oculto;
-                padding: 150px 20px 20px 20px;
-                overflow: hidden;
-                #cromo {     
-                    position: relative; 
-                    @include protesis-animacion;
-                    grid-area: cromo;
-                }
-                &:hover .img1 {
-                    opacity: .5;
+                display: flex;
+                flex-direction: row;
+                #cromo {   
+                    width: 50%;  
                 }
                 .txt_hidden {
-                    position: absolute;
-                    transition: all .3s;
-                    transform: scale(1.5);
-                    opacity: 0;
-                    width: 300px;
-                    cursor: pointer; 
-                    &:hover {
-                        opacity: 1;
-                        transform: scale(1);
+                    width: 50%;
+                    flex-wrap: wrap;
+                    background-color: rgb(182, 182, 180);
+                    h2 {
+                        padding-top: 50px;
+                        margin-left: 50px;
+                        text-transform: uppercase;
+                        text-align: left;
                     }
                     p {
-                        line-height: 2rem;
+                        @include parrafo;
+                        padding: 50px;
+                    }
+                    img {
+                        margin: 50px 0 0 50px;
                     }
                 }
-            }
+            }    
             #slider2 {
-                @include parrafo-oculto;
-                padding: 150px 20px 20px 20px;
-                overflow: hidden;
+                display: flex;
+                flex-direction: row-reverse;
                 #flexible {
-                    position: relative; 
-                    @include protesis-animacion;
-                    grid-area: flexible;
-                }
-                &:hover .img1 {
-                    opacity: .5;
+                    width: 50%;
                 }
                 .txt_hidden {
-                    position: absolute;
-                    transition: all .3s;
-                    transform: scale(1.5);
-                    opacity: 0;
-                    width: fit-content;
-                    height: fit-content;
-                    width: 300px;
-                    cursor: pointer;  
-                    &:hover {
-                        opacity: 1;
-                        transform: scale(1);
+                    width: 50%;
+                    flex-wrap: wrap;
+                    background-color: rgb(253, 189, 255);
+                    h2 {
+                        padding-top: 50px;
+                        margin-left: 50px;
+                        text-transform: uppercase;
+                        text-align: left;
                     }
                     p {
-                        line-height: 2rem;
+                        @include parrafo;
+                        padding: 50px;
+                    }
+                    img {
+                        margin: 50px 0 0 50px;
                     }
                 }
-            }
+            }    
             #slider3 {
-                @include parrafo-oculto;
-                padding: 20px;
-                overflow: hidden;
+                display: flex;
+                flex-direction: row;
                 #acrilico {
-                    position: relative; 
-                    @include protesis-animacion;
-                    grid-area: acril;
-                }
-                &:hover .img1 {
-                    opacity: .5;
+                    width: 50%;
                 }
                 .txt_hidden {
-                    position: absolute;
-                    transition: all .3s;
-                    transform: scale(1.5);
-                    opacity: 0;
-                    width: fit-content;
-                    height: fit-content;
-                    width: 300px;
-                    cursor: pointer;  
-                    &:hover {
-                        opacity: 1;
-                        transform: scale(1);
+                    width: 50%;
+                    flex-wrap: wrap;
+                    background-color: rgb(155, 248, 194);
+                    h2 {
+                        padding-top: 50px;
+                        margin-left: 50px;
+                        text-transform: uppercase;
+                        text-align: left;
                     }
                     p {
-                        line-height: 2rem;
+                        @include parrafo;
+                        padding: 50px;
                     }
+                    img {
+                        margin: 50px 0 0 50px;
+                    }
+
                 }
             }
             #slider4 {
-                 @include parrafo-oculto; 
-                 padding: 20px;   
-                 overflow: hidden;         
+                display: flex;
+                flex-direction: row-reverse;
+         
                 #fija {
-                    position: relative; 
-                    @include protesis-animacion;
-                    grid-area: fija;
-                }
-                &:hover .img1 {
-                    opacity: .5;
+                    width: 50%;
+
                 }
                 .txt_hidden {
-                    position: absolute;
-                    transition: all .3s;
-                    transform: scale(1.5);
-                    opacity: 0;
-                    width: fit-content;
-                    height: fit-content;
-                    width: 300px;
-                    cursor: pointer;  
-                    &:hover {
-                        opacity: 1;
-                        transform: scale(1);
+                    width: 50%;
+                    flex-wrap: wrap;
+                    align-items: left;
+                    background-color: rgb(231, 255, 200);
+                    h2 {
+                        padding-top: 50px;
+                        margin-left: 50px;
+                        text-transform: uppercase;
+                        text-align: left;
+                    }
+                    img {
+                        margin: 50px 0 0 50px;
                     }
                     p {
-                        line-height: 2rem;
+                        @include parrafo;
+                        padding: 50px;
                     }
                 }
             }
         }
     }
-
 
 
 @media screen and (max-width: 1500px) { 

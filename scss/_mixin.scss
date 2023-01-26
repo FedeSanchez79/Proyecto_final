@@ -1,23 +1,10 @@
-@mixin parrafo-oculto {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+@mixin parrafo {
     margin: 10px 0;
-    justify-content: center;
-    line-height: 1rem;
+    line-height: 3rem;
     font-size: medium;
     font-weight: 900;
     text-transform: uppercase;
-    text-align: center;
-}
-
-@mixin protesis-animacion {
-    opacity: 1;
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
-    border: 2px solid $color-boton;
-    border-radius: 10%;
+    text-align: left;
 }
 
 @mixin texto-hover( $padding , $tamaño , $ancho-texto, $mayuscula , $alto-linea){
