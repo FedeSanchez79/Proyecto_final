@@ -177,6 +177,11 @@
         color: map-get($paletaColores,"blanco");
         font-weight: 900;
         padding: 20px 20px 0 20px;
+        .redsocial {
+            a {
+                padding-left: 5px;
+            }
+        }
         .footer_botones {
             display: flex;
             flex-direction: column;

@@ -29,14 +29,18 @@
                 line-height: 2rem;
             }
             .boton {
-                text-decoration: none;
-                text-transform: uppercase;
-                color: $color-header;
-                font-weight: 900;
                 border: 2px solid $color-boton;
                 background-color: $color-boton;
                 padding: 10px 100px;
                 cursor: pointer;
+                span {
+                    a {
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        color: $color-header;
+                        font-weight: 900;
+                    }
+                }
             }
         }    
     }
@@ -55,14 +59,18 @@
                 line-height: 2rem;
             }
             .boton {
-                text-decoration: none;
-                text-transform: uppercase;
-                color: $color-header;
-                font-weight: 900;
                 border: 2px solid $color-boton;
                 background-color: $color-boton;
                 padding: 10px 100px;
                 cursor: pointer;
+                span {
+                    a {
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        color: $color-header;
+                        font-weight: 900;
+                    }
+                }
             }
         }
         img {
@@ -88,14 +96,18 @@
                 line-height: 2rem;
             }
             .boton {
-                text-decoration: none;
-                text-transform: uppercase;
-                color: $color-header;
-                font-weight: 900;
                 border: 2px solid $color-boton;
                 background-color: $color-boton;
                 padding: 10px 100px;
                 cursor: pointer;
+                span {
+                    a {
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        color: $color-header;
+                        font-weight: 900;
+                    }
+                }
             }
         }
     }
