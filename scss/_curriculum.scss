@@ -66,7 +66,6 @@
                     li {
                         list-style: none;
                         margin: 10px 0;
-                        cursor: pointer;
                         .icono_cv {
                             display: inline-block;
                             width: 30px;
@@ -74,6 +73,14 @@
                         .texto_cv {
                             color: map-get($paletaColores,"blanco");
                             font-weight: 300;
+                            a {
+                                color: map-get($paletaColores,"blanco");
+                                text-decoration: none;
+
+                            }
+                            a:hover {
+                                cursor: pointer;
+                            }
                         }
                     }
                 }
@@ -147,7 +154,7 @@
     }
 }
 
-@media screen and (max-width: 1500px) { 
+@media screen and (max-width: 1900px) { 
 
  }
 

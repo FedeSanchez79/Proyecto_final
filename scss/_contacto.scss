@@ -52,8 +52,6 @@
                 color: $color-header;
             }
             #boton {
-                width: 200px;
-                margin-left: 200px;
                 color: $color-header;
                 font-weight: 900;
                 background-color: rgba(63, 194, 203, 0.8);
@@ -86,8 +84,28 @@
                 }
             }
         }
-        #faded1 {
-            animation-delay: 2s;
-        }
     }
+}
+@media screen and (max-width: 1900px) { 
+
+}
+
+@media screen and (max-width: 1200px) { 
+    
+}
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 600px) {
+
+}
+@media screen and (max-width: 480px) {
+
+}
+@media screen and (max-width: 320px) {
+
 }

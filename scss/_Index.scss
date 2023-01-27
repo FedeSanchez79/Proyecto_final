@@ -75,6 +75,9 @@
                                 box-shadow: 0 0 10px 0 map-get($paletaColores,"blanco") inset, 0 0 10px 4px map-get($paletaColores,"blanco");
                             }
                         }
+                        img {
+                            padding-left: 10px;
+                        }
                     }
                 }
             }
@@ -174,9 +177,25 @@
         color: map-get($paletaColores,"blanco");
         font-weight: 900;
         padding: 20px 20px 0 20px;
+        .footer_botones {
+            display: flex;
+            flex-direction: column;
+            padding: 0 20px 20px 0;
+            list-style-image: url(../assets/images/asterisco.png);
+            li {
+                a {
+                    color:$color-header;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    &:hover {
+                        color:rgba(233, 217, 217, 0.774)
+                    }
+                }
+            }
+        }
     }
 
-@media screen and (max-width: 1600px) { 
+@media screen and (max-width: 1900px) { 
     .main {
         .espacio
         .contenedor {
@@ -221,6 +240,7 @@
     }
         .footer {
             height: 20vh;
+
         }  
     }
       

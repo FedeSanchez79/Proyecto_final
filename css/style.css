@@ -56,6 +56,8 @@
             transition: all 300ms ease; }
             .body .header_inferior .menu ul li a:hover {
               box-shadow: 0 0 10px 0 #faf0fa inset, 0 0 10px 4px #faf0fa; }
+          .body .header_inferior .menu ul li img {
+            padding-left: 10px; }
 
 .main {
   width: 100%;
@@ -146,8 +148,19 @@
   color: #faf0fa;
   font-weight: 900;
   padding: 20px 20px 0 20px; }
+  .footer .footer_botones {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 20px 0;
+    list-style-image: url(../assets/images/asterisco.png); }
+    .footer .footer_botones li a {
+      color: #faf0fa;
+      text-transform: uppercase;
+      text-decoration: none; }
+      .footer .footer_botones li a:hover {
+        color: rgba(233, 217, 217, 0.774); }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1900px) {
   .main .espacio
 .contenedor {
     height: 100%; }
@@ -479,8 +492,6 @@
       .main_contacto .contacto_up form .input::placeholder {
         color: #faf0fa; }
       .main_contacto .contacto_up form #boton {
-        width: 200px;
-        margin-left: 200px;
         color: #faf0fa;
         font-weight: 900;
         background-color: rgba(63, 194, 203, 0.8);
@@ -504,8 +515,6 @@
         .main_contacto .contacto_down div p strong {
           color: #3fc2cb;
           font-size: larger; }
-    .main_contacto .contacto_down #faded1 {
-      animation-delay: 2s; }
 
 .main_nosotros {
   display: flex;
@@ -668,14 +677,18 @@
           margin-bottom: 20px; }
         .cv .contenedor .izquierda .datos_cv ul li {
           list-style: none;
-          margin: 10px 0;
-          cursor: pointer; }
+          margin: 10px 0; }
           .cv .contenedor .izquierda .datos_cv ul li .icono_cv {
             display: inline-block;
             width: 30px; }
           .cv .contenedor .izquierda .datos_cv ul li .texto_cv {
             color: #faf0fa;
             font-weight: 300; }
+            .cv .contenedor .izquierda .datos_cv ul li .texto_cv a {
+              color: #faf0fa;
+              text-decoration: none; }
+            .cv .contenedor .izquierda .datos_cv ul li .texto_cv a:hover {
+              cursor: pointer; }
       .cv .contenedor .izquierda .estudios {
         text-transform: uppercase;
         padding-top: 80px; }
