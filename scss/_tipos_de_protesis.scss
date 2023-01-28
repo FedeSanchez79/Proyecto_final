@@ -1,9 +1,21 @@
 
-
+    .header {
+        .header_inferior {
+            .menu {
+                ul {
+                    li {
+                        #tp {
+                            color: rgba(80, 78, 78, 0.8);
+                        }
+                    }
+                }
+            }
+        }
+    }
     .main_tp {
 
         h1 {
-            padding: 250px 0 50px 0;
+            padding: 50px 0 50px 0;
             text-align: center;
         }
         .linea {
@@ -22,11 +34,13 @@
         .imagen_protesis {
             display: flex;
             flex-direction: column;
+            width: 100%;
             #slider1 {
                 display: flex;
                 flex-direction: row;
                 #cromo {   
-                    width: 50%;  
+                    width: 50%;
+                    height: auto;
                 }
                 .txt_hidden {
                     width: 50%;
@@ -136,7 +150,23 @@
 
 @media screen and (max-width: 1200px)  { 
     .main_tp {
-        width: 100%;
+        .imagen_protesis {
+            #slider1 {
+                width: 100%;
+                #cromo {
+                    height: auto;
+                }
+                .txt_hidden {
+                    h2 {
+                        padding-top: 30px;
+                    }
+                    p {
+                        line-height: 2rem;
+                        padding-top: 30px;
+                    }
+                }
+            }
+        }
     }
  }
 @media screen and (max-width: 1024px) {
@@ -144,95 +174,369 @@
         .imagen_protesis {
             display: flex;
             flex-direction: column;
+            #slider1 {
+                .txt_hidden {
+                    h2 {
+                        padding-top: 10px;
+                    }
+                    p {
+                        padding-top: 10px;
+                        line-height: 1.5rem;
+                        font-size: small;
+                    }
+                    img {
+                        margin-top: 30px;
+                    }
+                }
+            }
             #slider2 {
-                padding-top: 50px;
+                .txt_hidden {
+                    h2 {
+                        padding-top: 10px;
+                    }
+                    p {
+                        padding-top: 10px;
+                        line-height: 1.5rem;
+                        font-size: small;
+                    }
+                    img {
+                        margin-top: 30px;
+                    }
+                }
+            }
+            #slider3 {
+                .txt_hidden {
+                    h2 {
+                        padding-top: 10px;
+                    }
+                    p {
+                        padding-top: 10px;
+                        line-height: 1.5rem;
+                        font-size: small;
+                    }
+                    img {
+                        margin-top: 30px;
+                    }
+                }
+            }
+            #slider4 {
+                .txt_hidden {
+                    h2 {
+                        padding-top: 10px;
+                    }
+                    p {
+                        padding-top: 10px;
+                        line-height: 1.5rem;
+                        font-size: small;
+                    }
+                    img {
+                        margin-top: 30px;
+                    }
+                }
             }
         }
     }
 } 
 
 @media screen and (max-width: 768px) {
-
+    .main_tp {
+        .imagen_protesis {
+            #slider1 {
+                .txt_hidden {
+                    h2 {
+                        font-size: large;
+                        
+                    }
+                    p { 
+                        margin-top: 0;
+                        padding-top: 5px;
+                        font-size: x-small;
+                    }
+                    img {
+                        margin-top: 15px;
+                    }
+                }
+            }
+            #slider2 {
+                .txt_hidden {
+                    h2 {
+                        font-size: large;
+                        
+                    }
+                    p { 
+                        margin-top: 0;
+                        padding-top: 5px;
+                        font-size: x-small;
+                    }
+                    img {
+                        margin-top: 15px;
+                    }
+                }
+            }
+            #slider3 {
+                .txt_hidden {
+                    h2 {
+                        font-size: large;
+                        
+                    }
+                    p { 
+                        margin-top: 0;
+                        padding-top: 5px;
+                        font-size: x-small;
+                    }
+                    img {
+                        margin-top: 15px;
+                    }
+                }
+            }
+            #slider4 {
+                .txt_hidden {
+                    h2 {
+                        font-size: large;
+                        
+                    }
+                    p { 
+                        margin-top: 0;
+                        padding-top: 5px;
+                        font-size: x-small;
+                    }
+                    img {
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+   
+    }
  }
 
 @media screen and (max-width: 600px) {
-    .main_tp{
+    .main_tp {     
+        .imagen_protesis { 
+            #slider1 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+               #cromo {
+                width: 100%;
+               }
+               .txt_hidden {
+                width: 100%;
+                    h2 {
+                        font-size: x-large;
+                        padding-top: 30px;
+                    }
+                    p {
+                        font-size: large;
+                        padding: 30px;
+                    }
+               }  
+            }
+            #slider2 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+               #flexible {
+                width: 100%;
+               }
+               .txt_hidden {
+                width: 100%;
+                    h2 {
+                        font-size: x-large;
+                        padding-top: 30px;
+                    }
+                    p {
+                        font-size: large;
+                        padding: 30px;
+                    }
+               }  
+            }
+            #slider3 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+               #acrilico {
+                    width: 100%;
+               }
+               .txt_hidden {
+                width: 100%;
+                    h2 {
+                        font-size: x-large;
+                        padding-top: 30px;
+                    }
+                    p {
+                        font-size: large;
+                        padding: 30px;
+                    }
+               }  
+            }
+            #slider4 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+               #fija {
+                    width: 100%;
+               }
+               .txt_hidden {
+                width: 100%;
+                    h2 {
+                        font-size: x-large;
+                        padding-top: 30px;
+                    }
+                    p {
+                        font-size: large;
+                        padding: 30px;
+                    }
+               }  
+            }
+        }
+    }
+    .footer {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        .footer_datos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .redsocial {
+            padding: 10px;
+            img {
+                width: 2em;
+                padding: 2px;
+            }
+        }
+        .footer_botones {
+            display: none;
+        }
+        .cv_icono {
+            img {
+                width: 2em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main_tp {    
+        .imagen_protesis { 
+            #slider1 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+               #cromo {
+                    width: 100%;
+               }
+               .txt_hidden {
+                width: 100%;
+                    h2 {
+                        font-size: large;
+                        padding-top: 10px;
+                    }
+                    p {
+                        font-size: medium;
+                        padding: 10px;
+                    }
+                }  
+            }
+            #slider2 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+               #flexible {
+                    width: 100%;
+               }
+               .txt_hidden {
+                width: 100%;
+                    h2 {
+                        font-size: large;
+                        padding-top: 10px;
+                    }
+                    p {
+                        font-size: medium;
+                        padding: 10px;
+                    }
+                }  
+            }
+            #slider3 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+               #acrilico {
+                    width: 100%;
+               }
+               .txt_hidden {
+                width: 100%;
+                    h2 {
+                        font-size: large;
+                        padding-top: 10px;
+                    }
+                    p {
+                        font-size: medium;
+                        padding: 10px;
+                    }
+               }  
+            }
+            #slider4 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+               #fija {
+                width: 100%;
+               }
+               .txt_hidden {
+                width: 100%;
+                    h2 {
+                        font-size: large;
+                        padding-top: 10px;
+                    }
+                    p {
+                        font-size: medium;
+                        padding: 10px;
+                    }
+                } 
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .main_tp {
         .imagen_protesis {
             #slider1 {
                 #cromo {
-                    width: 400px;
+                    width: 100%;
+                }
+                .txt_hidden {
+                    width: 100%;
                 }
             }
             #slider2 {
                 #flexible {
-                    width: 400px;
+                    width: 100%;
+                }
+                .txt_hidden {
+                    width: 100%;
                 }
             }
             #slider3 {
                 #acrilico {
-                    width: 400px;
+                    width: 100%;
+                }
+                .txt_hidden {
+                    width: 100%;
                 }
             }
             #slider4 {
                 #fija {
-                    width: 400px;
+                    width: 100%;
                 }
-            }
-        }
-    }
- }
-@media screen and (max-width: 480px) {
-    .body {
-        width: 480px;   
-        .main_tp{
-            .imagen_protesis {
-                #slider1 {
-                    margin-left: 30px;
-                    #cromo {
-                        width: 350px;
-                    }
+                .txt_hidden {
+                    width: 100%;
                 }
-                #slider2 {
-                    margin-left: 30px;
-                    #flexible {
-                        width: 350px;
-                    }
-                }
-                #slider3 {
-                    margin-left: 30px;
-                    #acrilico {
-                        width: 350px;
-                    }
-                }
-                #slider4 {
-                    margin-left: 30px;
-                    #fija {
-                        width: 350px;
-                    }
-                }
-            }
-        }
-    }
-} 
-
-@media screen and (max-width: 320px) {
-    .main_tp{
-        .imagen_protesis {
-            #slider1 {
-                margin-left: 30px;
-
-            }
-            #slider2 {
-                margin-left: 30px;
-
-            }
-            #slider3 {
-                margin-left: 30px;
-
-            }
-            #slider4 {
-                margin-left: 30px;
-
             }
         }
     }

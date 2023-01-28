@@ -33,7 +33,7 @@
                 <label for="toggle"><img class="hamburguesa" src="./assets/images/menu1.png" alt="icono de menu desplegable"></label> 
                 <nav class="menu">
                     <ul>   
-                        <li><a href="./index.html">inicio</a></li>
+                        <li><a id="ind" href="./index.html">inicio</a></li>
                         <li><a href="./pages/tipos_de_protesis.html">tipos de protesis</a></li>
                         <li><a href="./pages/sobre_nosotros.html">sobre nosotros</a></li>
                         <li><a href="./pages/Curriculum.html" target="_blank">curriculum</a></li>
@@ -49,13 +49,15 @@
             </section>
             <div class="contenedor">
                 <div class="c_img">
+
+<!-- la imagen de background no le modifico el tamaño en las media queries porque no quiero que reduzca el tamaño y queda enfocado en el centro -->
+
                     <img src="./assets/images/Concierge+Doctor.jpg" alt="un cad cam">
                     <div class="c_txt">
                         <h3>Contamos con la ultima tecnologia</h3>
                         <ul>
                             <li>Escáner de sistema Cad/Cam</li>
                             <li>Hornos y centrifugas inducción</li>
-                            <li>Escaner dental Cerec Sirona Blue Cam</li>
                             <li>Equipos medidores de punto de fusión digital</li>
                             <li>Impresoras 3d</li>
                         </ul>
@@ -84,10 +86,13 @@
             
         </main>
         <footer class="footer">
-            <p class="footer__datos">posted by: Federico Sanchez
-            <br> 
-            Copyright © 2022  |   Aviso legal
-            </p> 
+            <div class="footer_datos">
+                <a href="./index.html"><img src="./assets/images/LS2.jpg" alt="logo laboratorio sanchez"></a>
+                <p class="footer__datos">posted by: Federico Sanchez
+                <br> 
+                Copyright © 2022  |   Aviso legal
+                </p> 
+            </div>
             <div class="redsocial">
 
             <!-- se que los archivos de iconos tenian que estar en formato .svg pero no sabia como darle el estilo de colores que tienen estos archivos .png -->
@@ -100,7 +105,7 @@
             </div> 
             <nav class="footer_botones">
                 <ul>
-                    <li><a href="./index.html">inicio</a></li>
+                    <li><a id="ind" href="./index.html">inicio</a></li>
                     <li><a href="./pages/tipos_de_protesis.html">tipos de protesis</a></li>
                     <li><a href="./pages/sobre_nosotros.html">sobre nosotros</a></li>
                     <li><a href="./pages/Curriculum.html">curriculum vitae</a></li>

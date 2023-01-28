@@ -3,13 +3,15 @@ En este proyecto fui incluyendo algunos conceptos aprendidos en las clases con M
 * Box-modeling
 * Flex
 * GRIDS
-* Bootstrap
 * Animaciones
 * Media queries
 * SASS
 
 Entiendo que mi fuerte no es el diseño, sin embargo intente ser lo mas detallado con el codigo posible. 
 
-Ahora hablando del proyecto, esta desarrollado en mis conocimientos de Protesis dental. Todo lo referente a los diferentes tipos de protesis removibles y fijas, y sus descripciones. Tambien hay apartados donde incluyo un curriculum vitae (limitado por mis conocimientos) y una pagina de contacto. 
+Ahora hablando del proyecto, esta desarrollado en mis conocimientos de Protesis dental. Todo lo referente a los diferentes tipos de protesis removibles y fijas, y sus descripciones. Tambien hay apartados donde incluyo un curriculum vitae y una pagina de contacto. 
+En el mismo desarrollo, hay links a redes sociales y a paginas relacionadas al rubro. 
+Aplique animaciones utilizando la libreria de AOS, sobre todo a iconos y algunos titulos.
+
 
 

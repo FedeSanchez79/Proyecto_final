@@ -97,6 +97,9 @@
                             color: $color-header;
                             margin: 2px 0;
                         }
+                        h4 {
+                            color:rgb(113, 222, 241);
+                        }
                     }
                 }
             }
@@ -147,7 +150,7 @@
                     margin:20px 0;
                 }
                 img {
-                    margin: 20px;
+                    margin: 10px;
                 }
             }
         }
@@ -176,7 +179,7 @@
             "derecha";
             .izquierda {
                 grid-area: izquierda;
-                height: 110vh;
+                height: fit-content;
             }
             .derecha {
                 grid-area: derecha;
