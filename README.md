@@ -13,5 +13,9 @@ Ahora hablando del proyecto, esta desarrollado en mis conocimientos de Protesis 
 En el mismo desarrollo, hay links a redes sociales y a paginas relacionadas al rubro. 
 Aplique animaciones utilizando la libreria de AOS, sobre todo a iconos y algunos titulos.
 
+La ultima version presentada presenta sutiles cambios respecto a lo que queria entregar. Igualmente un error que cometi pero que no voy a repetir es haber hecho los commits dentro del main y no dentro de la rama cambios que habia creado. De esta forma me hubiese ahorrado hacer todos estos commits en el main. Otra cuestion que no pude resolver es convertir los archivos .png a .svg. No entendi bien como hacerlo y cual seria la utilidad. Pero me voy a poner a investigar. 
+
+Espero que el trabajo este a la altura, y decir que me siento orgulloso por lo presentado.
+
 
 

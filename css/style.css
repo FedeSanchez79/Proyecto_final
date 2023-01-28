@@ -4,8 +4,7 @@
   box-sizing: border-box; }
 
 .header {
-  width: 100%;
-  background-color: #4c4a4a; }
+  background-color: #4a4a4a; }
   .header .header__superior {
     display: flex;
     flex-direction: row;
@@ -63,7 +62,6 @@
         color: rgba(80, 78, 78, 0.8); }
 
 .main {
-  width: 100%;
   margin-bottom: 0;
   background-image: url(../assets/images/laboratorio-dental2.jpg);
   background-repeat: no-repeat;
@@ -71,13 +69,10 @@
   background-position: center;
   background-size: cover; }
   .main .espacio {
-    height: 100vh;
-    width: 100vw;
-    max-width: 1600px;
-    min-width: 320px; }
+    height: 100vh; }
   .main .frase {
     height: 20vh;
-    background-color: #4c4a4a;
+    background-color: #4a4a4a;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -140,13 +135,12 @@
         line-height: 2rem; }
 
 .footer {
-  background-color: #4c4a4a;
+  background-color: #4a4a4a;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 20vh;
-  width: 100%;
+  height: 25vh;
   color: #faf1fa;
   font-weight: 900;
   padding: 20px 20px 0 20px; }
@@ -177,7 +171,7 @@
 .contenedor {
     height: 100%; }
   .footer {
-    height: 20vh; } }
+    height: 25vh; } }
 
 @media screen and (max-width: 1200px) {
   .main .espacio {
@@ -313,7 +307,7 @@
 .main_tp p {
   text-align: center;
   font-size: x-large;
-  font-weight: 900;
+  font-weight: 800;
   padding-bottom: 50px; }
 
 .main_tp .imagen_protesis {
@@ -339,7 +333,7 @@
         margin: 10px 0;
         line-height: 3rem;
         font-size: medium;
-        font-weight: 800;
+        font-weight: 900;
         text-transform: uppercase;
         text-align: left;
         padding: 50px; }
@@ -363,7 +357,7 @@
         margin: 10px 0;
         line-height: 3rem;
         font-size: medium;
-        font-weight: 800;
+        font-weight: 900;
         text-transform: uppercase;
         text-align: left;
         padding: 50px; }
@@ -387,7 +381,7 @@
         margin: 10px 0;
         line-height: 3rem;
         font-size: medium;
-        font-weight: 800;
+        font-weight: 900;
         text-transform: uppercase;
         text-align: left;
         padding: 50px; }
@@ -414,7 +408,7 @@
         margin: 10px 0;
         line-height: 3rem;
         font-size: medium;
-        font-weight: 800;
+        font-weight: 900;
         text-transform: uppercase;
         text-align: left;
         padding: 50px; }
@@ -695,7 +689,7 @@
       .main_contacto .contacto_up form .input {
         margin-bottom: 20px;
         height: 20px;
-        border-bottom: 2px solid #3fc2cb;
+        border-bottom: 2px solid #3fc3cb;
         border-top: rgba(0, 0, 0, 0);
         border-left: rgba(0, 0, 0, 0);
         border-right: rgba(0, 0, 0, 0);
@@ -798,6 +792,11 @@
           text-decoration: none;
           color: #faf1fa;
           font-weight: 900; }
+      .main_nosotros #seccion1 .seccion__txt .boton:hover {
+        background-color: rgba(80, 78, 78, 0.8);
+        border: 2px solid rgba(80, 78, 78, 0.8); }
+        .main_nosotros #seccion1 .seccion__txt .boton:hover span a {
+          color: #3fc2cb; }
   .main_nosotros #seccion2 {
     padding-top: 50px;
     display: flex;
@@ -826,6 +825,11 @@
           text-decoration: none;
           color: #faf1fa;
           font-weight: 900; }
+      .main_nosotros #seccion2 .seccion__txt .boton:hover {
+        background-color: rgba(80, 78, 78, 0.8);
+        border: 2px solid rgba(80, 78, 78, 0.8); }
+        .main_nosotros #seccion2 .seccion__txt .boton:hover span a {
+          color: #3fc2cb; }
     .main_nosotros #seccion2 img {
       border-radius: 50%;
       width: 100%; }
@@ -849,7 +853,7 @@
         font-weight: 900; }
       .main_nosotros #seccion3 .seccion__txt p {
         padding: 20px 150px;
-        color: #414b4a;
+        color: #414c4a;
         line-height: 2rem; }
       .main_nosotros #seccion3 .seccion__txt .boton {
         border: 2px solid #3fc2cb;
@@ -861,6 +865,11 @@
           text-decoration: none;
           color: #faf1fa;
           font-weight: 900; }
+      .main_nosotros #seccion3 .seccion__txt .boton:hover {
+        background-color: rgba(80, 78, 78, 0.8);
+        border: 2px solid rgba(80, 78, 78, 0.8); }
+        .main_nosotros #seccion3 .seccion__txt .boton:hover span a {
+          color: #3fc2cb; }
 
 @media screen and (max-width: 1200px) {
   .main_nosotros {
@@ -1055,7 +1064,7 @@
       .cv .contenedor .derecha .experiencia .texto p {
         line-height: 1.5rem; }
       .cv .contenedor .derecha .redes .titulo2 {
-        color: #27545c;
+        color: #27555c;
         text-transform: uppercase;
         letter-spacing: 1px;
         margin: 20px 0; }

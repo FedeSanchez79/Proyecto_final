@@ -5,7 +5,6 @@
 }
 
     .header {
-        width: 100%;
         background-color: $background;
         .header__superior {
             display: flex;
@@ -89,7 +88,6 @@
         }
 
     .main {
-        width: 100%;
         margin-bottom: 0;
         background-image: url(../assets/images/laboratorio-dental2.jpg);
         background-repeat: no-repeat;
@@ -98,9 +96,6 @@
         background-size: cover;
         .espacio {
             height: 100vh;
-            width: 100vw;
-            max-width: 1600px;
-            min-width: 320px;
         }
         .frase {
             height: 20vh;
@@ -175,8 +170,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        height: 20vh;
-        width: 100%;
+        height: 25vh;
         color: map-get($paletaColores,"blanco");
         font-weight: 900;
         padding: 20px 20px 0 20px;
@@ -223,7 +217,7 @@
         }
     }        
     .footer {
-        height: 20vh;
+        height: 25vh;
     }
 }
 

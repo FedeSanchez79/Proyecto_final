@@ -56,6 +56,15 @@
                     }
                 }
             }
+            .boton:hover {
+                background-color: rgba(80, 78, 78, 0.8);
+                border: 2px solid rgba(80, 78, 78, 0.8);
+                span {
+                    a {
+                        color: $color-boton;
+                    }
+                }
+            }
         }    
     }
     #seccion2 {
@@ -86,6 +95,15 @@
                     }
                 }
             }
+            .boton:hover {
+                background-color: rgba(80, 78, 78, 0.8);
+                border: 2px solid rgba(80, 78, 78, 0.8);
+                span {
+                    a {
+                        color: $color-boton;
+                    }
+                }
+            }
         }
         img {
             border-radius: 50%;
@@ -108,7 +126,7 @@
             }
             p {
                 padding: 20px 150px;
-                color: rgb(65, 75, 74);
+                color: rgb(65, 76, 74);
                 line-height: 2rem;
             }
             .boton {
@@ -122,6 +140,15 @@
                         text-decoration: none;
                         color: $color-header;
                         font-weight: 900;
+                    }
+                }
+            }
+            .boton:hover {
+                background-color: rgba(80, 78, 78, 0.8);
+                border: 2px solid rgba(80, 78, 78, 0.8);
+                span {
+                    a {
+                        color: $color-boton;
                     }
                 }
             }
